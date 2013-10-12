@@ -46,6 +46,7 @@ function meta_s2_setup() {
 	 */
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'meta_s2' ),
+		'secondary' => __( 'Secondary Menu', 'meta_s2' ),
 	) );
 
 	/**
@@ -76,8 +77,17 @@ function meta_s2_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+	register_sidebar( array(
+		'name'          => __( 'Footer Widgets', 'meta_s2' ),
+		'id'            => 'footer-widgets',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s footer-widget">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
+	) );
 }
 add_action( 'widgets_init', 'meta_s2_widgets_init' );
+
 
 /**
  * Enqueue scripts and styles
@@ -102,7 +112,7 @@ add_action( 'wp_enqueue_scripts', 'meta_s2_scripts' );
 /**
  * Implement the Custom Header feature.
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
@@ -123,3 +133,32 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Featured Content and related Image Size
+ */
+
+add_theme_support( 'featured-content', array(
+    'featured_content_filter' => 'wcp_featured_posts',
+    'max_posts'   => 2,
+) );
+ 
+function wcp_get_featured_posts() {
+    return apply_filters( 'wcp_featured_posts', array() );
+}
+ 
+function wcp_has_featured_posts( $minimum = 0 ) {
+    if ( is_paged() )
+        return false;
+ 
+    $minimum = absint( $minimum );
+    $featured_posts = apply_filters( 'mytheme_get_featured_posts', array() );
+ 
+    if ( ! is_array( $featured_posts ) )
+        return false;
+ 
+    if ( $minimum > count( $featured_posts ) )
+        return false;
+ 
+    return true;
+}

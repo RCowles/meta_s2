@@ -17,9 +17,28 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 0 0;
+	//margin: 1.5em 0 0;
+	margin: 1.5em 1.5em 0 0;
 }
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
+}
+
+/* =Content
+----------------------------------------------- */
+.entry-title {
+	font-size: 2em;
+}
+
+.entry-title a {
+	text-decoration: none;
+}
+
+.entry-meta {
+	font-size: 0.9em;
+}
+
+.entry-meta a {
+	text-decoration: none;
 }

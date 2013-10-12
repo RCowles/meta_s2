@@ -3,7 +3,9 @@
 
 /* Colors */
 $primary: #336699; //#669acc;
-$secondary: complement($primary); //#eca742;
+//$secondary: complement($primary);
+//$secondary: #eca742;
+$secondary: #ddd;
 $dark: #333;
 $light: #ccc;
 $neutral: #404040;
@@ -12,3 +14,8 @@ $neutral: #404040;
 $sans: sans-serif;
 $serif: serif;
 $monospace: "Courier 10 Pitch", Courier, monospace;
+
+/* Transitions */
+$transition-fast: all .2s ease-in-out;
+$transition-normal: all .4s ease-in-out;
+$transition-slow: all .8s ease-in-out;

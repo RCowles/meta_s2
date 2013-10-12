@@ -11,6 +11,11 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
+		
+		<ul id="footer-widgets">
+			<?php dynamic_sidebar( 'footer-widgets' ); ?>
+		</ul>
+	
 		<div class="site-info">
 			<?php do_action( 'meta_s2_credits' ); ?>
 			<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'meta_s2' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'meta_s2' ), 'WordPress' ); ?></a>

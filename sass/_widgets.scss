@@ -11,6 +11,66 @@
 }
 
 /* Search widget */
+.widget_search .search-field {
+	width: 96%;
+}
+
 .widget_search .search-submit {
 	display: none;
+}
+
+/* Widget Defaults */
+.widget-title {
+	background: $secondary;
+	color: $primary;
+	padding: .5em 1em;
+}
+
+aside.widget ul {
+	margin: 0;
+}
+
+aside.widget ul li {
+	list-style: none;
+}
+
+aside.widget p,
+aside.widget li,
+aside.widget form {
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin: 0.5em;
+}
+
+aside.widget li {
+	margin: 0.5em 0;
+}
+
+aside.widget li a {
+	display: block;
+	text-decoration: none;
+}
+
+/* =Footer Widgets
+----------------------------------------------- */
+
+#footer-widgets {
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+}
+
+#footer-widgets aside {
+	float: left;
+	//padding: 1%;
+	padding-right: 1%;
+	width: 23%;
+}
+
+#footer-widgets aside:first-child {
+	width: 25%;
+}
+
+#footer-widgets aside:last-child {
+	width: 25%;
 }

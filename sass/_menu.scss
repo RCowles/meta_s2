@@ -2,11 +2,11 @@
 /* =Menu
 ----------------------------------------------- */
 
+/* Primary Menu */
 .main-navigation {
-	clear: both;
 	display: block;
-	float: left;
-	width: 100%;
+	float: right;
+	max-width: 60%;
 }
 .main-navigation ul {
 	list-style: none;
@@ -18,17 +18,27 @@
 	position: relative;
 }
 .main-navigation a {
+	color: lighten($primary, 20%);
 	display: block;
+	padding: 12px 12px;
 	text-decoration: none;
+	transition: $transition-fast;
+}
+.main-navigation a:hover {
+	background: lighten($secondary, 5%);
+	color: lighten($primary, 20%);
 }
 .main-navigation ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-	display: none;
+	background: #fff;
+	//display: none;
+	opacity: 0;
 	float: left;
 	position: absolute;
-		top: 1.5em;
+		top: 2.5em;
 		left: 0;
 	z-index: 99999;
+	transition: $transition-fast;
 }
 .main-navigation ul ul ul {
 	left: 100%;
@@ -37,6 +47,9 @@
 .main-navigation ul ul a {
 	width: 200px;
 }
+.main-navigation ul ul a:hover {
+}
+
 .main-navigation ul ul li {
 }
 .main-navigation li:hover > a {
@@ -47,6 +60,7 @@
 }
 .main-navigation ul li:hover > ul {
 	display: block;
+	opacity: 1;
 }
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
@@ -67,4 +81,66 @@
 	.main-navigation ul {
 		display: none;
 	}
+}
+
+/* Secondary Menu */
+.sub-navigation {
+	background: darken($primary, 6%);
+	margin: 0 0 2em 0;
+}
+.menu-categories-container {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.menu-categories-container ul {
+	list-style: none;
+	margin: 0 auto;
+	padding-left: 0;
+	overflow: hidden;
+}
+.menu-categories-container li {
+	float: left;
+	position: relative;
+}
+.menu-categories-container a {
+	color: lighten($primary, 20%);
+	display: block;
+	//margin: 0 auto;
+	padding: 12px 8px;
+	text-decoration: none;
+}
+.menu-categories-container a:hover {
+	color: lighten($primary, 30%);
+}
+.menu-categories-container ul ul {
+	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+	display: none;
+	float: left;
+	position: absolute;
+		top: 1.5em;
+		left: 0;
+	z-index: 99999;
+}
+.menu-categories-container ul ul ul {
+	left: 100%;
+	top: 0;
+}
+.menu-categories-container ul ul a {
+	width: 200px;
+}
+.menu-categories-container ul ul li {
+}
+.menu-categories-container li:hover > a {
+}
+.menu-categories-container ul ul :hover > a {
+}
+.menu-categories-container ul ul a:hover {
+}
+.menu-categories-container ul li:hover > ul {
+	display: block;
+}
+.menu-categories-container li.current_page_item a,
+.menu-categories-container li.current-menu-item a {
 }

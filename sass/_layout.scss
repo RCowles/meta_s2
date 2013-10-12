@@ -1,0 +1,65 @@
+/* =Layout
+----------------------------------------------- */
+
+.hfeed {
+	margin: 0 auto;
+}
+
+#content,
+//#colophon,
+//#masthead,
+.wrapper,
+.menu-categories-container ul  {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+#masthead {
+	background: $secondary;
+	padding: 12px 0;
+	padding: 1.2rem 0;
+}
+
+/* /layouts/content-sidebar.css */
+.content-area {
+	float: left;
+	margin: 0 -25% 0 0;
+	width: 100%;
+}
+.site-main {
+	margin: 0 25% 0 0;
+}
+.site-content .widget-area {
+	float: right;
+	overflow: hidden;
+	width: 25%;
+}
+.site-footer {
+	clear: both;
+	width: 100%;
+}
+
+/* Masthead */
+#masthead img {
+	width: 100%;
+}
+
+.site-branding {
+	float: left;
+	width: 40%;
+}
+
+/* Footer
+*/
+footer#colophon {
+	background: #eee;
+	padding: 1em 0;
+}
+
+.site-info {
+	clear: both;
+	font-size: 12px;
+	font-size: 1.2rem;
+	max-width: 1200px;
+	margin: 0 auto;
+}

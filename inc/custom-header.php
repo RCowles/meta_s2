@@ -29,8 +29,9 @@ function meta_s2_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'meta_s2_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000',
-		'width'                  => 1000,
-		'height'                 => 250,
+		'width'                  => 2000,
+		'height'                 => 500,
+		'flex-width'             => true,
 		'flex-height'            => true,
 		'wp-head-callback'       => 'meta_s2_header_style',
 		'admin-head-callback'    => 'meta_s2_admin_header_style',
