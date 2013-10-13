@@ -5,18 +5,28 @@
 /* Primary Menu */
 .main-navigation {
 	display: block;
-	float: right;
-	max-width: 60%;
+	margin: 0 auto;
+	padding: 18px 0 12px 0;
+	text-align: center;
+	//float: right;
+	//max-width: 60%;
 }
+
+.main-navigation {
+
+}
+
 .main-navigation ul {
 	list-style: none;
 	margin: 0;
 	padding-left: 0;
 }
+
 .main-navigation li {
 	float: left;
 	position: relative;
 }
+
 .main-navigation a {
 	color: lighten($primary, 20%);
 	display: block;
@@ -24,10 +34,14 @@
 	text-decoration: none;
 	transition: $transition-fast;
 }
+
 .main-navigation a:hover {
 	background: lighten($secondary, 5%);
+	border-bottom: 2px solid $primary;
 	color: lighten($primary, 20%);
+	padding: 12px 12px 10px 12px;
 }
+
 .main-navigation ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 	background: #fff;
@@ -40,28 +54,38 @@
 	z-index: 99999;
 	transition: $transition-fast;
 }
+
 .main-navigation ul ul ul {
 	left: 100%;
 	top: 0;
 }
+
 .main-navigation ul ul a {
 	width: 200px;
 }
+
 .main-navigation ul ul a:hover {
+	border-bottom: none;
+	padding: 12px;
 }
 
 .main-navigation ul ul li {
 }
+
 .main-navigation li:hover > a {
 }
+
 .main-navigation ul ul :hover > a {
 }
+
 .main-navigation ul ul a:hover {
 }
+
 .main-navigation ul li:hover > ul {
 	display: block;
 	opacity: 1;
 }
+
 .main-navigation li.current_page_item a,
 .main-navigation li.current-menu-item a {
 }
@@ -88,22 +112,26 @@
 	background: darken($primary, 6%);
 	margin: 0 0 2em 0;
 }
+
 .menu-categories-container {
 	clear: both;
 	display: block;
 	margin: 0 auto;
 	max-width: 1200px;
 }
+
 .menu-categories-container ul {
 	list-style: none;
 	margin: 0 auto;
 	padding-left: 0;
 	overflow: hidden;
 }
+
 .menu-categories-container li {
 	float: left;
 	position: relative;
 }
+
 .menu-categories-container a {
 	color: lighten($primary, 20%);
 	display: block;
@@ -111,9 +139,11 @@
 	padding: 12px 8px;
 	text-decoration: none;
 }
+
 .menu-categories-container a:hover {
 	color: lighten($primary, 30%);
 }
+
 .menu-categories-container ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 	display: none;
@@ -123,24 +153,32 @@
 		left: 0;
 	z-index: 99999;
 }
+
 .menu-categories-container ul ul ul {
 	left: 100%;
 	top: 0;
 }
+
 .menu-categories-container ul ul a {
 	width: 200px;
 }
+
 .menu-categories-container ul ul li {
 }
+
 .menu-categories-container li:hover > a {
 }
+
 .menu-categories-container ul ul :hover > a {
 }
+
 .menu-categories-container ul ul a:hover {
 }
+
 .menu-categories-container ul li:hover > ul {
 	display: block;
 }
+
 .menu-categories-container li.current_page_item a,
 .menu-categories-container li.current-menu-item a {
 }

@@ -20,6 +20,10 @@
 	padding: 1.2rem 0;
 }
 
+img.banner {
+	border-top: 2px solid $primary;
+}
+
 /* /layouts/content-sidebar.css */
 .content-area {
 	float: left;
@@ -45,27 +49,13 @@
 }
 
 .site-branding {
-	float: left;
-	width: 40%;
+	//float: left;
+	//width: 40%;
+	text-align: center;
 }
 
-/* Footer
-*/
-footer#colophon {
-	background: lighten($secondary, 10%);
-	padding: 1em 0;
-}
-
-.site-info {
-	clear: both;
-	font-size: 12px;
-	font-size: 1.2rem;
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
-/* Header
-*/
+/* =Header
+----------------------------------------------- */
 .site-title {
 	font-size: 24px;
 	font-size: 2.4rem;
@@ -86,4 +76,19 @@ h2.site-description {
 	color: $primary;
 	font-size: 14px;
 	font-size: 1.4rem;
+}
+
+/* =Footer
+----------------------------------------------- */
+footer#colophon {
+	background: lighten($secondary, 10%);
+	padding: 1em 0;
+}
+
+.site-info {
+	clear: both;
+	font-size: 12px;
+	font-size: 1.2rem;
+	max-width: 1200px;
+	margin: 0 auto;
 }
