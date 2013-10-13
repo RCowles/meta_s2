@@ -52,7 +52,7 @@
 /* Footer
 */
 footer#colophon {
-	background: #eee;
+	background: lighten($secondary, 10%);
 	padding: 1em 0;
 }
 
@@ -62,4 +62,28 @@ footer#colophon {
 	font-size: 1.2rem;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+/* Header
+*/
+.site-title {
+	font-size: 24px;
+	font-size: 2.4rem;
+}
+
+.site-title a,
+.site-title a:visited,
+.site-title a:active {
+	color: lighten($primary, 20%);
+	text-decoration: none;
+}
+
+.site-title a:hover {
+	color: lighten($primary, 10%);
+}
+
+h2.site-description {
+	color: $primary;
+	font-size: 14px;
+	font-size: 1.4rem;
 }
