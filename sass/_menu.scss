@@ -18,12 +18,14 @@
 
 .main-navigation ul {
 	list-style: none;
-	margin: 0;
+	margin: 0 auto;
 	padding-left: 0;
+	text-align: center;
 }
 
 .main-navigation li {
-	float: left;
+//	float: left;
+	display: inline-block;
 	position: relative;
 }
 
@@ -97,12 +99,15 @@
 }
 
 @media screen and (max-width: 600px) {
-	.menu-toggle,
-	.main-navigation.toggled .nav-menu {
+	.menu-toggle {
 		display: block;
 	}
+	
+	.main-navigation.toggled .nav-menu {
+		display: block
+	}
 
-	.main-navigation ul {
+	.main-navigation .nav-menu {
 		display: none;
 	}
 }
@@ -182,3 +187,21 @@
 .menu-categories-container li.current_page_item a,
 .menu-categories-container li.current-menu-item a {
 }
+
+
+/* Mobile Menu */
+.menu-toggle {
+	background: $primary;
+	border-radius: 4px;
+	color: $secondary;
+	margin: 0 auto;
+	padding: 6px 18px;
+	width: 90%;
+	
+}
+
+
+
+
+
+
