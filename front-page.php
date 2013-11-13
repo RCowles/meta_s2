@@ -1,8 +1,8 @@
 <?php
 /**
- * The main frontpage tamplte file.
+ * The main frontpage template file.
  *
- * @since 
+ * @since 1.0
  *
  * @package meta_s2
  */
@@ -29,7 +29,6 @@ if ( empty( $feat_post ) )
 </div><!-- .fc-wrap -->
 <?php wp_reset_postdata(); 
 ?>
-
 
 
 	<div id="primary" class="content-area">
