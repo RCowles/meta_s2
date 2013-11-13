@@ -47,27 +47,7 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
 				<img src="<?php header_image(); ?>" width="100%" height="<?php echo get_custom_header()->height; ?>" alt="" class="banner">
 			</a>
-		<?php } // if ( ! empty( $header_image ) ) ?>
-		
-		<?php
-		/* Featured Content
-			if( wcp_has_featured_posts() ) :
-			$featured_posts = wcp_get_featured_posts();
-			$post_count = count($featured_posts);
-			?>
-			<div class="wcp-featured-posts post-count-<?php echo $post_count; ?>">
-			<?php foreach( $featured_posts as $post ) :
-				setup_postdata( $post ); ?>
-				<div class="hentry wcp-featured-post">
-					<h2 class="entry-title title"><a  href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-					<div class="thumb"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'wcp-front-feature'); ?><span class="overlay"></span></a></div>
-					<div class="entry-summary"><?php the_excerpt(); ?></div>
-					<a class="readmore" href="<?php the_permalink(); ?>"><span>Read More&hellip;</span></a>
-				</div>
-			<?php endforeach; ?>
-			</div>
-		<?php endif; 
-		*/ ?>
+		<?php } ?>
 		
 	<nav class="sub-navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>

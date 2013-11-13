@@ -8,28 +8,22 @@
  */
 
 get_header(); ?>
-
-<?php
-// Get our Featured Content posts
-$feat_post = themeslug_get_featured_content();
- 
-// If we have no posts, our work is done here
-if ( empty( $feat_post ) )
-    return;
- 
-// Let's loop through our posts ?>
-<div class="fc-wrap">
-    <?php foreach ( $feat_post as $post ) : setup_postdata( $post ); ?>
-        <div class="fc-post" style="border: 1px solid #333;margin: 20px;">
-            <h3><?php the_title(); ?></h3>
-            <?php get_featured_image(); ?>
-            <?php the_excerpt(); ?>
-        </div><!-- .fc-post -->
-    <?php endforeach; ?>
-</div><!-- .fc-wrap -->
-<?php wp_reset_postdata(); 
-?>
-
+	
+	<?php 
+	if( meta_s2_has_featured_posts() ) :
+		$featured_posts = meta_s2_get_featured_posts();
+		$post_count = count($featured_posts);
+		?>
+		<div class="featured-posts">
+			<?php foreach( $featured_posts as $post ) :
+				setup_postdata( $post ); ?>
+				<div class="featured-post">
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'meta_s2_featured'); ?><span class="overlay"></span></a>
+				</div>
+			<?php endforeach; ?>
+		</div>
+	<?php endif; ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
