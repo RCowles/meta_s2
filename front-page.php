@@ -18,8 +18,10 @@ get_header(); ?>
 			<?php foreach( $featured_posts as $post ) :
 				setup_postdata( $post ); ?>
 				<div class="featured-post">
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'meta_s2_featured'); ?><span class="overlay"></span></a>
+					<a href="<?php the_permalink(); ?>">
+						<h3><?php the_title(); ?></h3>
+						<?php the_post_thumbnail( 'meta_s2_featured'); ?>
+					</a>
 				</div>
 			<?php endforeach; ?>
 		</div>
