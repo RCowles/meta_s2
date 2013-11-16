@@ -115,6 +115,8 @@
 /* Secondary Menu */
 .sub-navigation {
 	background: darken($primary, 6%);
+	border-bottom: 2px solid lighten(complement($primary), 20%);
+	border-top: 2px solid lighten(complement($primary), 20%);
 	margin: 0 0 2em 0;
 }
 

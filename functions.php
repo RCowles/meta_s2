@@ -62,35 +62,6 @@ function meta_s2_setup() {
 		'default-image' => '',
 	) ) );
 	
-	/**
-	 * Featured Content and related Image Size
-	 */
-	add_image_size( 'meta_s2_featured', 300, 300, true );
-	
-	add_theme_support( 'featured-content', array(
-	    'featured_content_filter' => 'meta_s2_featured_posts',
-	    'max_posts'   => 4,
-	) );
-	 
-	function meta_s2_get_featured_posts() {
-	    return apply_filters( 'meta_s2_featured_posts', array() );
-	}
-	 
-	function meta_s2_has_featured_posts( $minimum = 0 ) {
-	    if ( is_paged() )
-	        return false;
-	 
-	    $minimum = absint( $minimum );
-	    $featured_posts = apply_filters( 'mytheme_get_featured_posts', array() );
-	 
-	    if ( ! is_array( $featured_posts ) )
-	        return false;
-	 
-	    if ( $minimum > count( $featured_posts ) )
-	        return false;
-	 
-	    return true;
-	}	
 }
 endif; // meta_s2_setup
 add_action( 'after_setup_theme', 'meta_s2_setup' );

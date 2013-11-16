@@ -14,6 +14,7 @@ function meta_s2_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'footer'    => 'page',
+		'footer_widgets' => 'footer-widgets',
 	) );
 }
 add_action( 'after_setup_theme', 'meta_s2_jetpack_setup' );
