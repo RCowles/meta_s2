@@ -21,10 +21,8 @@
 
 /* Widget Defaults */
 .widget-title {
-	//background: lighten($secondary, 6%);
 	background: $primary;
 	border-bottom: 2px solid lighten(complement($primary), 20%);
-	//color: $primary;
 	color: lighten($secondary, 6%);
 	padding: .5em 1em;
 }
@@ -65,15 +63,12 @@ aside.widget li a {
 
 #footer-widgets aside {
 	float: left;
-	//padding: 1%;
-	padding-right: 1%;
+	padding: 1%;
 	width: 23%;
 }
 
-#footer-widgets aside:first-child {
-	width: 25%;
-}
-
+#footer-widgets aside:first-child,
 #footer-widgets aside:last-child {
+	padding: 1% 0;
 	width: 25%;
 }
