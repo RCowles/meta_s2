@@ -4,6 +4,10 @@
 	clear: both;
 }
 
+.featured-posts img {
+	display: block;
+}
+
 /* 
  * Captions based on http://css-tricks.com/slide-in-image-captions/
  */
@@ -55,12 +59,12 @@ figure:hover:before {
 }
 
 .cap-left:before { 
-	bottom: 7px;
+	bottom: 0px;
 	left: 0px;
 }
 
 .cap-left figcaption {
-	bottom: 7px;
+	bottom: 0px;
 	left: -30%;
 }
 
