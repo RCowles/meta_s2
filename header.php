@@ -39,17 +39,34 @@
 		</nav><!-- #site-navigation -->
 		
 			</div> <!-- .wrapper !-->
-		
-	</header><!-- #masthead -->
 			
-		<?php $header_image = get_header_image();
-		if ( ! empty( $header_image ) && is_front_page()) { ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<img src="<?php header_image(); ?>" width="100%" height="<?php echo get_custom_header()->height; ?>" alt="" class="banner">
-			</a>
-		<?php } ?>
-		
+			<?php 
+			/**
+			 * Let's show some Featured Content 
+			 */
+			if( meta_s2_has_featured_posts() ) :
+				$featured_posts = meta_s2_get_featured_posts();
+				$post_count = count($featured_posts);
+				?>
+				<div class="featured-posts">
+					<?php foreach( $featured_posts as $post ) :
+						setup_postdata( $post ); ?>
+						
+						<figure class="cap-left">
+							<?php the_post_thumbnail( 'meta_s2_featured'); ?>
+							<figcaption>
+								<?php the_title(); ?>
+							</figcaption>
+						</figure>
+						
+					<?php endforeach; ?>
+				</div> <!-- .featured-posts !-->
+			<?php endif; ?>
+
+	</header><!-- #masthead -->
+	
 	<nav class="sub-navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'secondary' ) ); ?>
 	</nav> <!-- .sub-navigation !-->
+	
 	<div id="content" class="site-content">

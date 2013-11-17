@@ -10,6 +10,9 @@
 get_header(); ?>
 	
 	<?php 
+	/**
+	 * Featured Content
+	 
 	if( meta_s2_has_featured_posts() ) :
 		$featured_posts = meta_s2_get_featured_posts();
 		$post_count = count($featured_posts);
@@ -25,7 +28,8 @@ get_header(); ?>
 				</div>
 			<?php endforeach; ?>
 		</div>
-	<?php endif; ?>
+	<?php endif; 
+	*/ ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
