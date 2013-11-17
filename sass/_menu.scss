@@ -34,7 +34,7 @@
 	display: block;
 	padding: 12px 12px;
 	text-decoration: none;
-	transition: $transition-fast;
+	//transition: $transition-fast;
 }
 
 .main-navigation a:hover {
@@ -54,7 +54,7 @@
 		top: 2.5em;
 		left: 0;
 	z-index: 99999;
-	transition: $transition-fast;
+	//transition: $transition-fast;
 }
 
 .main-navigation ul ul ul {
@@ -115,7 +115,8 @@
 /* Secondary Menu */
 .sub-navigation {
 	background: darken($primary, 6%);
-	border-bottom: 2px solid lighten(complement($primary), 20%);
+	//border-bottom: 2px solid lighten(complement($primary), 20%);
+	border-bottom: 2px solid darken($primary, 20%);
 	border-top: 2px solid lighten(complement($primary), 20%);
 	margin: 0 0 2em 0;
 }

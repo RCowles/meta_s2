@@ -6,8 +6,6 @@
 }
 
 #content,
-//#colophon,
-//#masthead,
 .wrapper,
 .menu-categories-container ul  {
 	margin: 0 auto;
@@ -85,7 +83,6 @@ h2.site-description {
 /* =Footer
 ----------------------------------------------- */
 footer#colophon {
-	//background: lighten($secondary, 10%);
 	background: $secondary;
 	padding: 1em 0;
 }

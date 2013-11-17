@@ -1,6 +1,7 @@
 /* =Frontpage featured content
 ----------------------------------------------- */
 .featured-posts {
+	border-top: 2px solid lighten($secondary, 20%);
 	clear: both;
 }
 
@@ -56,6 +57,9 @@ figure:before {
 
 figure:hover:before {
 	opacity: 0;
+	//width: 40%;
+	//right: 10px;
+	//text-align: right;
 }
 
 .cap-left:before { 

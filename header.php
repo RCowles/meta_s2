@@ -44,20 +44,23 @@
 			/**
 			 * Let's show some Featured Content 
 			 */
-			if( meta_s2_has_featured_posts() ) :
+			if( is_front_page() && meta_s2_has_featured_posts() ) :
 				$featured_posts = meta_s2_get_featured_posts();
 				$post_count = count($featured_posts);
 				?>
 				<div class="featured-posts">
 					<?php foreach( $featured_posts as $post ) :
 						setup_postdata( $post ); ?>
-						
+						<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 						<figure class="cap-left">
-							<?php the_post_thumbnail( 'meta_s2_featured'); ?>
-							<figcaption>
-								<?php the_title(); ?>
-							</figcaption>
+							<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
+								<?php the_post_thumbnail( 'meta_s2_featured'); ?>
+								<figcaption>
+									<?php the_title(); ?>
+								</figcaption>
+							</a>
 						</figure>
+						
 						
 					<?php endforeach; ?>
 				</div> <!-- .featured-posts !-->

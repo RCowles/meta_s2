@@ -63,11 +63,10 @@ aside.widget li a {
 
 #footer-widgets aside {
 	float: left;
-	padding: 1%;
-	width: 23%;
+	padding: 1% 1% 1% 0;
+	width: 24%;
 }
 
-#footer-widgets aside:first-child,
 #footer-widgets aside:last-child {
 	padding: 1% 0;
 	width: 25%;
