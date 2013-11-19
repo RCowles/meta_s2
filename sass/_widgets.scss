@@ -52,6 +52,13 @@ aside.widget li a {
 	text-decoration: none;
 }
 
+/* =Sidebar Widgets
+----------------------------------------------- */
+
+#secondary .widget-title {
+	@include border-radius(6px 6px 0 0);
+}
+
 /* =Footer Widgets
 ----------------------------------------------- */
 
