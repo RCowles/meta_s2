@@ -103,6 +103,16 @@
 		display: block;
 	}
 	
+	.site-branding, 
+	.main-navigation {
+		float: none;
+		text-align: center;
+	}
+	
+	.main-navigation li {
+		display: block;
+	}
+	
 	.main-navigation.toggled .nav-menu {
 		display: block
 	}
