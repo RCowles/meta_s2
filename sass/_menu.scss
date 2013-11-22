@@ -126,8 +126,9 @@
 .sub-navigation {
 	background: darken($primary, 6%);
 	//border-bottom: 2px solid lighten(complement($primary), 20%);
-	border-bottom: 2px solid darken($primary, 20%);
-	border-top: 2px solid lighten(complement($primary), 20%);
+	border-bottom: 2px solid darken($primary, 10%);
+	//border-top: 2px solid lighten(complement($primary), 20%);
+	border-top: 2px solid lighten($primary, 10%);
 	margin: 0 0 2em 0;
 }
 
@@ -159,6 +160,7 @@
 }
 
 .menu-categories-container a:hover {
+	background: darken($primary, 10%);
 	color: lighten($primary, 30%);
 }
 
