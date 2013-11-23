@@ -13,7 +13,7 @@
 }
 
 #masthead {
-	background: $secondary;
+	background: darken($primary, 10%);
 	padding: 12px 0;
 	padding: 1.2rem 0 0 0;
 }
@@ -76,7 +76,7 @@ img.banner {
 }
 
 h2.site-description {
-	color: $primary;
+	color: lighten($primary, 40%);
 	font-size: 14px;
 	font-size: 1.4rem;
 }

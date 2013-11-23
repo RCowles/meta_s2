@@ -124,47 +124,45 @@
 
 /* Secondary Menu */
 .sub-navigation {
-	background: darken($primary, 6%);
-	//border-bottom: 2px solid lighten(complement($primary), 20%);
-	border-bottom: 2px solid darken($primary, 10%);
-	//border-top: 2px solid lighten(complement($primary), 20%);
-	border-top: 2px solid lighten($primary, 10%);
+	background: lighten($primary, 10%);
+	//border-bottom: 2px solid darken($primary, 30%);
+	//border-top: 2px solid darken($primary, 10%);
 	margin: 0 0 2em 0;
 }
 
-.menu-categories-container {
+.sub-navigation div {
 	clear: both;
 	display: block;
 	margin: 0 auto;
 	max-width: 1200px;
 }
 
-.menu-categories-container ul {
+.sub-navigation div ul {
 	list-style: none;
 	margin: 0 auto;
 	padding-left: 0;
 	overflow: hidden;
 }
 
-.menu-categories-container li {
+.sub-navigation div li {
 	float: left;
 	position: relative;
 }
 
-.menu-categories-container a {
-	color: lighten($primary, 20%);
+.sub-navigation div a {
+	color: lighten($primary, 30%);
 	display: block;
 	//margin: 0 auto;
 	padding: 12px 8px;
 	text-decoration: none;
 }
 
-.menu-categories-container a:hover {
+.sub-navigation div a:hover {
 	background: darken($primary, 10%);
-	color: lighten($primary, 30%);
+	color: lighten($primary, 40%);
 }
 
-.menu-categories-container ul ul {
+.sub-navigation div ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 	display: none;
 	float: left;
@@ -174,33 +172,33 @@
 	z-index: 99999;
 }
 
-.menu-categories-container ul ul ul {
+.sub-navigation div ul ul ul {
 	left: 100%;
 	top: 0;
 }
 
-.menu-categories-container ul ul a {
+.sub-navigation div ul ul a {
 	width: 200px;
 }
 
-.menu-categories-container ul ul li {
+.sub-navigation div ul ul li {
 }
 
-.menu-categories-container li:hover > a {
+.sub-navigation div li:hover > a {
 }
 
-.menu-categories-container ul ul :hover > a {
+.sub-navigation div ul ul :hover > a {
 }
 
-.menu-categories-container ul ul a:hover {
+.sub-navigation div ul ul a:hover {
 }
 
-.menu-categories-container ul li:hover > ul {
+.sub-navigation div ul li:hover > ul {
 	display: block;
 }
 
-.menu-categories-container li.current_page_item a,
-.menu-categories-container li.current-menu-item a {
+.sub-navigation div li.current_page_item a,
+.sub-navigation div li.current-menu-item a {
 }
 
 
