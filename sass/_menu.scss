@@ -24,7 +24,6 @@
 }
 
 .main-navigation li {
-//	float: left;
 	display: inline-block;
 	position: relative;
 }
@@ -34,11 +33,11 @@
 	display: block;
 	padding: 12px 12px;
 	text-decoration: none;
-	//transition: $transition-fast;
 }
 
-.main-navigation a:hover {
-	background: lighten($secondary, 5%);
+.main-navigation a:hover,
+.main-navigation li.current-menu-item a {
+	background: darken($primary, 35%);
 	border-bottom: 2px solid $primary;
 	color: lighten($primary, 20%);
 	padding: 12px 12px 10px 12px;
@@ -46,7 +45,7 @@
 
 .main-navigation ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-	background: #fff;
+	background: darken($primary, 25%);
 	display: none;
 	opacity: 0;
 	float: left;
@@ -54,7 +53,6 @@
 		top: 2.5em;
 		left: 0;
 	z-index: 99999;
-	//transition: $transition-fast;
 }
 
 .main-navigation ul ul ul {
@@ -63,12 +61,12 @@
 }
 
 .main-navigation ul ul a {
+	border-bottom: none;
 	width: 200px;
 }
 
 .main-navigation ul ul a:hover {
-	border-bottom: none;
-	padding: 12px;
+	background: darken($primary, 15%);
 }
 
 .main-navigation ul ul li {
@@ -125,8 +123,6 @@
 /* Secondary Menu */
 .sub-navigation {
 	background: lighten($primary, 10%);
-	//border-bottom: 2px solid darken($primary, 30%);
-	//border-top: 2px solid darken($primary, 10%);
 	margin: 0 0 2em 0;
 }
 
@@ -158,7 +154,7 @@
 }
 
 .sub-navigation div a:hover {
-	background: darken($primary, 10%);
+	background: darken($primary, 25%);
 	color: lighten($primary, 40%);
 }
 
