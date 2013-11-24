@@ -43,6 +43,10 @@
 	padding: 12px 12px 10px 12px;
 }
 
+.main-navigation li.current-menu-item ul a {
+	border-bottom: none;
+}
+
 .main-navigation ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 	background: darken($primary, 25%);
@@ -122,7 +126,7 @@
 
 /* Secondary Menu */
 .sub-navigation {
-	background: lighten($primary, 10%);
+	background: $primary;
 	margin: 0 0 2em 0;
 }
 

@@ -21,7 +21,7 @@
 
 /* Widget Defaults */
 .widget-title {
-	background: lighten($primary, 10%);
+	background: $primary;
 	border-bottom: 2px solid lighten(complement($primary), 20%);
 	color: lighten($secondary, 6%);
 	padding: .5em 1em;

@@ -30,7 +30,7 @@ img.banner {
 }
 .site-main {
 	margin: 0 25% 0 0;
-	padding: 0 1% 1% 1%;
+	padding: 0 4em 1em 1em;
 }
 .site-content .widget-area {
 	float: right;
@@ -84,7 +84,8 @@ h2.site-description {
 /* =Footer
 ----------------------------------------------- */
 footer#colophon {
-	background: $secondary;
+	background: darken($primary, 35%);
+	border-top: 16px solid $primary;
 	padding: 1em 0;
 }
 
