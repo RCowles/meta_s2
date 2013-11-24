@@ -36,6 +36,7 @@
 }
 
 .main-navigation a:hover,
+.main-navigation li ul a:hover,
 .main-navigation li.current-menu-item a {
 	background: darken($primary, 35%);
 	border-bottom: 2px solid $primary;
@@ -43,7 +44,8 @@
 	padding: 12px 12px 10px 12px;
 }
 
-.main-navigation li.current-menu-item ul a {
+.main-navigation li.current-menu-item ul a,
+.main-navigation li ul a:hover {
 	border-bottom: none;
 }
 

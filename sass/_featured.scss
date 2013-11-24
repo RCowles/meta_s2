@@ -27,10 +27,8 @@ figcaption {
 	color: #fff;
 	padding: 10px 20px;
 	opacity: 0;
-	@include border-radius(0 6px 0 0);
-	-webkit-transition: $transition-normal;
-	-moz-transition: $transition-normal;
-	-o-transition: $transition-normal;
+	//@include border-radius(0 6px 0 0);
+	@include transition($transition-normal);
 }
 
 figure:hover figcaption {
@@ -51,17 +49,12 @@ figure:before {
 	font-size: 14px;
 	line-height: 24px;
 	//@include border-radius(0 6px 0 0);
-	-webkit-transition: $transition-normal;
-	-moz-transition: $transition-normal;
-	-o-transition: $transition-normal;
+	@include transition($transition-normal);
 	opacity: 0.75;
 }
 
 figure:hover:before {
 	opacity: 0;
-	//width: 40%;
-	//right: 10px;
-	//text-align: right;
 }
 
 .cap-left:before { 
