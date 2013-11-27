@@ -51,7 +51,7 @@
 
 .main-navigation ul ul {
 	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-	background: darken($primary, 25%);
+	background: darken($primary, 35%);
 	display: none;
 	opacity: 0;
 	float: left;
@@ -68,6 +68,7 @@
 
 .main-navigation ul ul a {
 	border-bottom: none;
+	padding: 12px;
 	width: 200px;
 }
 

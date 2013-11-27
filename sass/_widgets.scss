@@ -12,6 +12,7 @@
 
 /* Search widget */
 .widget_search .search-field {
+	padding: 2%;
 	width: 96%;
 }
 
@@ -77,4 +78,10 @@ aside.widget li a {
 #footer-widgets aside:last-child {
 	padding: 1% 0;
 	width: 25%;
+}
+
+#footer-widgets a,
+#footer-widgets a:visited,
+#footer-widgets a:active {
+
 }
