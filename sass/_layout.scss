@@ -13,13 +13,11 @@
 }
 
 #masthead {
-	background: darken($primary, 25%);
+	//background: darken($primary, 25%);
+	//background: $primary;
+	background: linear-gradient(color-stops($primary, darken($primary, 10%)));
 	padding: 12px 0;
 	padding: 1.2rem 0 0 0;
-}
-
-img.banner {
-	border-top: 2px solid $primary;
 }
 
 /* /layouts/content-sidebar.css */
@@ -67,7 +65,7 @@ img.banner {
 .site-title a,
 .site-title a:visited,
 .site-title a:active {
-	color: lighten($primary, 20%);
+	color: lighten($primary, 40%);
 	text-decoration: none;
 }
 
@@ -76,7 +74,8 @@ img.banner {
 }
 
 h2.site-description {
-	color: lighten($primary, 40%);
+	//color: lighten($primary, 40%);
+	color: $secondary;
 	font-size: 14px;
 	font-size: 1.4rem;
 }
@@ -84,7 +83,8 @@ h2.site-description {
 /* =Footer
 ----------------------------------------------- */
 footer#colophon {
-	background: darken($primary, 35%);
+	//background: darken($primary, 35%);
+	background: linear-gradient(color-stops($primary, darken($primary, 10%)));
 	border-top: 6px solid $primary;
 	padding: 1em 0;
 }

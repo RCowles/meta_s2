@@ -129,7 +129,9 @@
 
 /* Secondary Menu */
 .sub-navigation {
-	background: $primary;
+	//background: $primary;
+	background: linear-gradient(color-stops(#fff, #f2f2f2));
+	border-bottom: 1px solid #ccc;
 	margin: 0 0 2em 0;
 }
 
