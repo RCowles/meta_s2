@@ -84,7 +84,8 @@ h2.site-description {
 ----------------------------------------------- */
 footer#colophon {
 	//background: darken($primary, 35%);
-	background: linear-gradient(color-stops($primary, darken($primary, 10%)));
+	//background: linear-gradient(color-stops($primary, darken($primary, 10%)));
+	background: #000;
 	border-top: 6px solid $primary;
 	padding: 1em 0;
 }
