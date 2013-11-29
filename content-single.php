@@ -7,6 +7,8 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
 	
+		<?php echo get_the_post_thumbnail($post_id, 'meta_s2_single_header'); ?>
+	
 		<h1 class="entry-title"><?php the_title(); ?></h1>
 
 		<div class="entry-meta">

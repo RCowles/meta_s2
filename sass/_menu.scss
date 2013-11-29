@@ -8,95 +8,96 @@
 	margin: 0 auto;
 	padding: 18px 0 12px 0;
 	text-align: center;
+	
+	ul {
+		list-style: none;
+		margin: 0 auto;
+		padding-left: 0;
+		text-align: center;
+		
+		li:hover > ul {
+			display: block;
+			opacity: 1;
+		}
+		
+		ul {
+			@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+			background: darken($primary, 35%);
+			display: none;
+			opacity: 0;
+			float: left;
+			position: absolute;
+				top: 2.5em;
+				left: 0;
+			z-index: 99999;
+			
+			ul {
+				left: 100%;
+				top: 0;
+			}
+			
+			a {
+				border-bottom: none;
+				padding: 12px;
+				width: 200px;
+			}
+			
+			li:hover {
+				background: darken($primary, 15%);
+			}
+			
+			:hover > a {
+			
+			}
+			
+			a:hover {
+				
+			}
+			
+
+		}
+		
+	}
+	
+	li {
+		display: inline-block;
+		position: relative;
+	}
+	
+		a {
+		color: lighten($primary, 40%);
+		display: block;
+		padding: 12px 12px;
+		text-decoration: none;
+	}
+	
+	li:hover,
+	li.current-menu-item {
+		background: darken($primary, 35%);
+		border-bottom: 2px solid lighten($primary, 10%);
+		color: lighten($primary, 20%);
+	}
+	
+	li:hover a,
+	li.current-menu-item a {
+		padding: 12px 12px 10px 12px;
+	}
+	
+	li.current-menu-item ul a,
+	li:hover ul li {
+		border-bottom: none;
+	}
+	
+	li:hover > a {
+	
+	}
+	
+	li.current_page_item a,
+	li.current-menu-item a {
+	
+	}
 }
 
-.main-navigation {
-
-}
-
-.main-navigation ul {
-	list-style: none;
-	margin: 0 auto;
-	padding-left: 0;
-	text-align: center;
-}
-
-.main-navigation li {
-	display: inline-block;
-	position: relative;
-}
-
-.main-navigation a {
-	color: lighten($primary, 40%);
-	display: block;
-	padding: 12px 12px;
-	text-decoration: none;
-}
-
-.main-navigation li:hover,
-.main-navigation li.current-menu-item {
-	background: darken($primary, 35%);
-	border-bottom: 2px solid lighten($primary, 10%);
-	color: lighten($primary, 20%);
-}
-
-.main-navigation li:hover a,
-.main-navigation li.current-menu-item a {
-	padding: 12px 12px 10px 12px;
-}
-
-.main-navigation li.current-menu-item ul a,
-.main-navigation li:hover ul li {
-	border-bottom: none;
-}
-
-.main-navigation ul ul {
-	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-	background: darken($primary, 35%);
-	display: none;
-	opacity: 0;
-	float: left;
-	position: absolute;
-		top: 2.5em;
-		left: 0;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: 100%;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	border-bottom: none;
-	padding: 12px;
-	width: 200px;
-}
-
-.main-navigation ul ul li:hover {
-	background: darken($primary, 15%);
-}
-
-.main-navigation ul ul li {
-}
-
-.main-navigation li:hover > a {
-}
-
-.main-navigation ul ul :hover > a {
-}
-
-.main-navigation ul ul a:hover {
-}
-
-.main-navigation ul li:hover > ul {
-	display: block;
-	opacity: 1;
-}
-
-.main-navigation li.current_page_item a,
-.main-navigation li.current-menu-item a {
-}
 
 /* Small menu */
 .menu-toggle {

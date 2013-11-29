@@ -22,7 +22,7 @@
 
 /* Widget Defaults */
 .widget-title {
-	border-bottom: 2px solid $primary;
+	border-bottom: 2px solid lighten($primary, 20%);
 	color: $primary;
 	font-size: 18px;
 	font-size: 1.8rem;
@@ -82,7 +82,7 @@ aside.widget li a {
 }
 
 #footer-widgets .widget-title {
-	border-bottom: 2px solid lighten($primary, 20%);
+	border-bottom: 2px solid darken($primary, 10%);
 	color: lighten($primary, 30%);
 }
 

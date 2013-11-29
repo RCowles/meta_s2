@@ -52,8 +52,13 @@ function meta_s2_setup() {
 	/**
 	 * Enable support for Post Formats
 	 */
-	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link' ) );
+	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'status' ) );
 
+	/**
+	 * Image size for single header
+	 */
+	add_image_size( 'meta_s2_single_header', 9999, 300, true );
+	 
 	/**
 	 * Setup the WordPress core custom background feature.
 	 */

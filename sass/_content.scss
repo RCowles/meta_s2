@@ -76,3 +76,49 @@
 	vertical-align: top;
 }
 
+/* =Post Format Styling
+----------------------------------------------- */
+.entry-title:before {
+	background: $primary;
+	color: #eee;
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 28px/1 'Genericons';
+	vertical-align: top;
+	
+	.format-standard & {
+		content: '\f308';
+	}
+	
+	.format-gallery & {
+		content: '\f473';
+	}
+	
+	.format-image & {
+		content: '\f102';
+	}
+	
+	.format-quote & {
+		content: '\f106';
+	}
+	
+	.format-audio & {
+		content: '\f109';
+	}
+
+	.format-video & {
+		content: '\f104';
+	}
+
+	.format-link & {
+		content: '\f107';
+	}
+	
+	.format-status & {
+		content: '\f100';
+	}
+	
+	.format-chat & {
+		content: '\f108';
+	}
+}
