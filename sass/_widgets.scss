@@ -87,11 +87,15 @@ aside.widget li a {
 
 #footer-widgets .widget-title {
 	border-bottom: 2px solid lighten($primary, 20%);
-	color: lighten($primary, 20%);
+	color: lighten($primary, 30%);
 }
 
 #footer-widgets a,
 #footer-widgets a:visited,
 #footer-widgets a:active {
+	color: lighten($primary, 20%);
+}
 
+#footer-widgets a:hover {
+	color: lighten($primary, 30%);
 }
