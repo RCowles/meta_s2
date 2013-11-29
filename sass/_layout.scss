@@ -13,9 +13,8 @@
 }
 
 #masthead {
-	//background: darken($primary, 25%);
 	background: $primary;
-	//background: linear-gradient(color-stops($primary, darken($primary, 10%)));
+	background: linear-gradient(color-stops($primary, darken($primary, 10%)));
 	padding: 12px 0;
 	padding: 1.2rem 0 0 0;
 }
@@ -47,8 +46,6 @@
 
 .site-branding {
 	float: left;
-	//width: 40%;
-	//text-align: center;
 }
 
 .main-navigation {
@@ -74,7 +71,6 @@
 }
 
 h2.site-description {
-	//color: lighten($primary, 40%);
 	color: $secondary;
 	font-size: 14px;
 	font-size: 1.4rem;
@@ -84,16 +80,25 @@ h2.site-description {
 ----------------------------------------------- */
 footer#colophon {
 	background: darken($primary, 20%);
-	//background: linear-gradient(color-stops($primary, darken($primary, 10%)));
-	//background: #000;
 	border-top: 6px solid $primary;
 	padding: 1em 0;
 }
 
 .site-info {
 	clear: both;
+	color: darken($secondary, 30%);
 	font-size: 12px;
 	font-size: 1.2rem;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+
+.site-info a,
+.site-info a:visited,
+.site-info a:active {
+	color: lighten($primary, 10%);
+}
+
+.site-info a:hover {
+	color: lighten($primary, 20%);
 }

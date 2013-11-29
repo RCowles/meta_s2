@@ -22,15 +22,11 @@
 
 /* Widget Defaults */
 .widget-title {
-	//background: $primary;
-	//border-bottom: 2px solid lighten(complement($primary), 20%);
-	//color: lighten($primary, 20%);
-	//padding: .5em 1em;
 	border-bottom: 2px solid $primary;
 	color: $primary;
 	font-size: 18px;
 	font-size: 1.8rem;
-	padding: .5em 0;
+	margin: .5em 0;
 }
 
 aside.widget ul {

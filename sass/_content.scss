@@ -36,10 +36,11 @@
 }
 
 .entry-meta {
-	font-size: 0.9em;
+	font-size: 0.8em;
 }
 
 .entry-meta a {
+	color: lighten($primary, 20%);
 	text-decoration: none;
 }
 
@@ -48,3 +49,30 @@
 .attachment-featured {
 	
 }
+
+/* =Meta
+----------------------------------------------- */
+.entry-meta {
+	color: #666;
+}
+
+.posted-on {
+	margin-right: 1em;
+}
+
+.posted-on:before {
+	content: '\f307';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+
+.byline:before {
+	content: '\f304';
+	display: inline-block;
+	-webkit-font-smoothing: antialiased;
+	font: normal 16px/1 'Genericons';
+	vertical-align: top;
+}
+
