@@ -135,54 +135,54 @@
 	background: linear-gradient(color-stops(#fff, #f2f2f2));
 	border-bottom: 1px solid #ccc;
 	margin: 0 0 2em 0;
+		div {
+		clear: both;
+		display: block;
+		margin: 0 auto;
+		max-width: 1200px;
+		ul {
+			list-style: none;
+			margin: 0 auto;
+			padding-left: 0;
+			overflow: hidden;
+		}
+		li {
+			float: left;
+			position: relative;
+		}
+		
+		a {
+			color: lighten($primary, 30%);
+			display: block;
+			//margin: 0 auto;
+			padding: 12px 8px;
+			text-decoration: none;
+		}
+		
+		a:hover {
+			background: darken($primary, 25%);
+			color: lighten($primary, 40%);
+		}
+		
+		ul ul {
+			@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+			display: none;
+			float: left;
+			position: absolute;
+				top: 1.5em;
+				left: 0;
+			z-index: 99999;
+		}
+		
+		ul ul ul {
+			left: 100%;
+			top: 0;
+		}
+
+
+	}
 }
 
-.sub-navigation div {
-	clear: both;
-	display: block;
-	margin: 0 auto;
-	max-width: 1200px;
-}
-
-.sub-navigation div ul {
-	list-style: none;
-	margin: 0 auto;
-	padding-left: 0;
-	overflow: hidden;
-}
-
-.sub-navigation div li {
-	float: left;
-	position: relative;
-}
-
-.sub-navigation div a {
-	color: lighten($primary, 30%);
-	display: block;
-	//margin: 0 auto;
-	padding: 12px 8px;
-	text-decoration: none;
-}
-
-.sub-navigation div a:hover {
-	background: darken($primary, 25%);
-	color: lighten($primary, 40%);
-}
-
-.sub-navigation div ul ul {
-	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-	display: none;
-	float: left;
-	position: absolute;
-		top: 1.5em;
-		left: 0;
-	z-index: 99999;
-}
-
-.sub-navigation div ul ul ul {
-	left: 100%;
-	top: 0;
-}
 
 .sub-navigation div ul ul a {
 	width: 200px;
