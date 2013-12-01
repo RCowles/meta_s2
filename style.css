@@ -902,7 +902,7 @@ footer#colophon {
   margin: 1.5em 1.5em 0 0;
 }
 
-/* line 23, sass/_content.scss */
+/* line 22, sass/_content.scss */
 .page-links {
   clear: both;
   margin: 0 0 1.5em;
@@ -910,22 +910,22 @@ footer#colophon {
 
 /* =Content
 ----------------------------------------------- */
-/* line 30, sass/_content.scss */
+/* line 29, sass/_content.scss */
 .entry-title {
   font-size: 2em;
 }
 
-/* line 34, sass/_content.scss */
+/* line 33, sass/_content.scss */
 .entry-title a {
   text-decoration: none;
 }
 
-/* line 38, sass/_content.scss */
+/* line 37, sass/_content.scss */
 .entry-meta {
   font-size: 0.8em;
 }
 
-/* line 42, sass/_content.scss */
+/* line 41, sass/_content.scss */
 .entry-meta a {
   color: #6699cc;
   text-decoration: none;
@@ -935,17 +935,17 @@ footer#colophon {
 ----------------------------------------------- */
 /* =Meta
 ----------------------------------------------- */
-/* line 55, sass/_content.scss */
+/* line 54, sass/_content.scss */
 .entry-meta {
   color: #666;
 }
 
-/* line 59, sass/_content.scss */
+/* line 58, sass/_content.scss */
 .posted-on {
   margin-right: 1em;
 }
 
-/* line 63, sass/_content.scss */
+/* line 62, sass/_content.scss */
 .posted-on:before {
   content: '\f307';
   display: inline-block;
@@ -954,7 +954,7 @@ footer#colophon {
   vertical-align: top;
 }
 
-/* line 71, sass/_content.scss */
+/* line 70, sass/_content.scss */
 .byline:before {
   content: '\f304';
   display: inline-block;
@@ -965,7 +965,7 @@ footer#colophon {
 
 /* =Post Format Styling
 ----------------------------------------------- */
-/* line 81, sass/_content.scss */
+/* line 80, sass/_content.scss */
 .entry-title:before {
   background: #336699;
   color: #eee;
@@ -974,39 +974,39 @@ footer#colophon {
   font: normal 28px/1 'Genericons';
   vertical-align: top;
 }
-/* line 89, sass/_content.scss */
+/* line 88, sass/_content.scss */
 .format-standard .entry-title:before {
   content: '\f308';
 }
-/* line 93, sass/_content.scss */
+/* line 92, sass/_content.scss */
 .format-gallery .entry-title:before {
   content: '\f473';
 }
-/* line 97, sass/_content.scss */
+/* line 96, sass/_content.scss */
 .format-image .entry-title:before {
   content: '\f102';
 }
-/* line 101, sass/_content.scss */
+/* line 100, sass/_content.scss */
 .format-quote .entry-title:before {
   content: '\f106';
 }
-/* line 105, sass/_content.scss */
+/* line 104, sass/_content.scss */
 .format-audio .entry-title:before {
   content: '\f109';
 }
-/* line 109, sass/_content.scss */
+/* line 108, sass/_content.scss */
 .format-video .entry-title:before {
   content: '\f104';
 }
-/* line 113, sass/_content.scss */
+/* line 112, sass/_content.scss */
 .format-link .entry-title:before {
   content: '\f107';
 }
-/* line 117, sass/_content.scss */
+/* line 116, sass/_content.scss */
 .format-status .entry-title:before {
   content: '\f100';
 }
-/* line 121, sass/_content.scss */
+/* line 120, sass/_content.scss */
 .format-chat .entry-title:before {
   content: '\f108';
 }
