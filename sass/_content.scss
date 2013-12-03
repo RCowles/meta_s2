@@ -52,7 +52,13 @@
 /* =Meta
 ----------------------------------------------- */
 .entry-meta {
+	background: $secondary;
 	color: #666;
+	padding: .8em;
+}
+
+footer.entry-meta {
+	margin: 0 0 4em 0;
 }
 
 .posted-on {
@@ -77,13 +83,16 @@
 
 /* =Post Format Styling
 ----------------------------------------------- */
-.entry-title:before {
+.entry-title:after {
 	background: $primary;
-	color: #eee;
+	color: $secondary;
 	display: inline-block;
+	float: right;
 	-webkit-font-smoothing: antialiased;
 	font: normal 28px/1 'Genericons';
-	vertical-align: top;
+	vertical-align: center;
+	padding: .1em;
+	margin: 0 .4em 0 0;
 	
 	.format-standard & {
 		content: '\f308';

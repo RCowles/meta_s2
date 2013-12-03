@@ -937,15 +937,22 @@ footer#colophon {
 ----------------------------------------------- */
 /* line 54, sass/_content.scss */
 .entry-meta {
+  background: #eeeeee;
   color: #666;
+  padding: .8em;
 }
 
-/* line 58, sass/_content.scss */
+/* line 60, sass/_content.scss */
+footer.entry-meta {
+  margin: 0 0 4em 0;
+}
+
+/* line 64, sass/_content.scss */
 .posted-on {
   margin-right: 1em;
 }
 
-/* line 62, sass/_content.scss */
+/* line 68, sass/_content.scss */
 .posted-on:before {
   content: '\f307';
   display: inline-block;
@@ -954,7 +961,7 @@ footer#colophon {
   vertical-align: top;
 }
 
-/* line 70, sass/_content.scss */
+/* line 76, sass/_content.scss */
 .byline:before {
   content: '\f304';
   display: inline-block;
@@ -965,49 +972,52 @@ footer#colophon {
 
 /* =Post Format Styling
 ----------------------------------------------- */
-/* line 80, sass/_content.scss */
-.entry-title:before {
+/* line 86, sass/_content.scss */
+.entry-title:after {
   background: #336699;
-  color: #eee;
+  color: #eeeeee;
   display: inline-block;
+  float: right;
   -webkit-font-smoothing: antialiased;
   font: normal 28px/1 'Genericons';
-  vertical-align: top;
+  vertical-align: center;
+  padding: .1em;
+  margin: 0 .4em 0 0;
 }
-/* line 88, sass/_content.scss */
-.format-standard .entry-title:before {
+/* line 97, sass/_content.scss */
+.format-standard .entry-title:after {
   content: '\f308';
 }
-/* line 92, sass/_content.scss */
-.format-gallery .entry-title:before {
+/* line 101, sass/_content.scss */
+.format-gallery .entry-title:after {
   content: '\f473';
 }
-/* line 96, sass/_content.scss */
-.format-image .entry-title:before {
+/* line 105, sass/_content.scss */
+.format-image .entry-title:after {
   content: '\f102';
 }
-/* line 100, sass/_content.scss */
-.format-quote .entry-title:before {
+/* line 109, sass/_content.scss */
+.format-quote .entry-title:after {
   content: '\f106';
 }
-/* line 104, sass/_content.scss */
-.format-audio .entry-title:before {
+/* line 113, sass/_content.scss */
+.format-audio .entry-title:after {
   content: '\f109';
 }
-/* line 108, sass/_content.scss */
-.format-video .entry-title:before {
+/* line 117, sass/_content.scss */
+.format-video .entry-title:after {
   content: '\f104';
 }
-/* line 112, sass/_content.scss */
-.format-link .entry-title:before {
+/* line 121, sass/_content.scss */
+.format-link .entry-title:after {
   content: '\f107';
 }
-/* line 116, sass/_content.scss */
-.format-status .entry-title:before {
+/* line 125, sass/_content.scss */
+.format-status .entry-title:after {
   content: '\f100';
 }
-/* line 120, sass/_content.scss */
-.format-chat .entry-title:before {
+/* line 129, sass/_content.scss */
+.format-chat .entry-title:after {
   content: '\f108';
 }
 
