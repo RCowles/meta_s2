@@ -938,21 +938,22 @@ footer#colophon {
 /* line 54, sass/_content.scss */
 .entry-meta {
   background: #eeeeee;
+  border-bottom: 2px solid #d4d4d4;
   color: #666;
   padding: .8em;
 }
 
-/* line 60, sass/_content.scss */
+/* line 61, sass/_content.scss */
 footer.entry-meta {
   margin: 0 0 4em 0;
 }
 
-/* line 64, sass/_content.scss */
+/* line 65, sass/_content.scss */
 .posted-on {
   margin-right: 1em;
 }
 
-/* line 68, sass/_content.scss */
+/* line 69, sass/_content.scss */
 .posted-on:before {
   content: '\f307';
   display: inline-block;
@@ -961,7 +962,7 @@ footer.entry-meta {
   vertical-align: top;
 }
 
-/* line 76, sass/_content.scss */
+/* line 77, sass/_content.scss */
 .byline:before {
   content: '\f304';
   display: inline-block;
@@ -972,52 +973,49 @@ footer.entry-meta {
 
 /* =Post Format Styling
 ----------------------------------------------- */
-/* line 86, sass/_content.scss */
-.entry-title:after {
-  background: #336699;
-  color: #eeeeee;
+/* line 87, sass/_content.scss */
+div.entry-meta:after {
+  color: #336699;
   display: inline-block;
   float: right;
   -webkit-font-smoothing: antialiased;
   font: normal 28px/1 'Genericons';
-  vertical-align: center;
-  padding: .1em;
-  margin: 0 .4em 0 0;
+  vertical-align: top;
 }
-/* line 97, sass/_content.scss */
-.format-standard .entry-title:after {
+/* line 95, sass/_content.scss */
+.format-standard div.entry-meta:after {
   content: '\f308';
 }
-/* line 101, sass/_content.scss */
-.format-gallery .entry-title:after {
+/* line 99, sass/_content.scss */
+.format-gallery div.entry-meta:after {
   content: '\f473';
 }
-/* line 105, sass/_content.scss */
-.format-image .entry-title:after {
+/* line 103, sass/_content.scss */
+.format-image div.entry-meta:after {
   content: '\f102';
 }
-/* line 109, sass/_content.scss */
-.format-quote .entry-title:after {
+/* line 107, sass/_content.scss */
+.format-quote div.entry-meta:after {
   content: '\f106';
 }
-/* line 113, sass/_content.scss */
-.format-audio .entry-title:after {
+/* line 111, sass/_content.scss */
+.format-audio div.entry-meta:after {
   content: '\f109';
 }
-/* line 117, sass/_content.scss */
-.format-video .entry-title:after {
+/* line 115, sass/_content.scss */
+.format-video div.entry-meta:after {
   content: '\f104';
 }
-/* line 121, sass/_content.scss */
-.format-link .entry-title:after {
+/* line 119, sass/_content.scss */
+.format-link div.entry-meta:after {
   content: '\f107';
 }
-/* line 125, sass/_content.scss */
-.format-status .entry-title:after {
+/* line 123, sass/_content.scss */
+.format-status div.entry-meta:after {
   content: '\f100';
 }
-/* line 129, sass/_content.scss */
-.format-chat .entry-title:after {
+/* line 127, sass/_content.scss */
+.format-chat div.entry-meta:after {
   content: '\f108';
 }
 

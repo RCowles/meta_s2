@@ -53,6 +53,7 @@
 ----------------------------------------------- */
 .entry-meta {
 	background: $secondary;
+	border-bottom: 2px solid darken($secondary, 10%);
 	color: #666;
 	padding: .8em;
 }
@@ -83,16 +84,13 @@ footer.entry-meta {
 
 /* =Post Format Styling
 ----------------------------------------------- */
-.entry-title:after {
-	background: $primary;
-	color: $secondary;
+div.entry-meta:after {
+	color: $primary;
 	display: inline-block;
 	float: right;
 	-webkit-font-smoothing: antialiased;
 	font: normal 28px/1 'Genericons';
-	vertical-align: center;
-	padding: .1em;
-	margin: 0 .4em 0 0;
+	vertical-align: top;
 	
 	.format-standard & {
 		content: '\f308';
