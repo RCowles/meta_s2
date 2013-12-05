@@ -43,6 +43,10 @@
 	text-decoration: none;
 }
 
+.entry-meta a:hover {
+	color: lighten($primary, 10%);
+}
+
 /* =Single
 ----------------------------------------------- */
 .attachment-featured {
