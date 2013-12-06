@@ -1204,9 +1204,14 @@ figure:hover:before {
 
 /* =Comments
 ----------------------------------------------- */
-/* line 4, sass/_comments.scss */
+/* line 3, sass/_comments.scss */
 .comment-content a {
   word-wrap: break-word;
+}
+
+/* line 44, sass/_comments.scss */
+.comment-list {
+  list-style: none;
 }
 
 /* =Widgets
