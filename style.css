@@ -1209,9 +1209,42 @@ figure:hover:before {
   word-wrap: break-word;
 }
 
-/* line 44, sass/_comments.scss */
+/* line 35, sass/_comments.scss */
+.comment-list .comment-meta {
+  background: #eeeeee;
+  border-bottom: 2px solid #d4d4d4;
+  color: #666;
+  padding: .8em;
+}
+
+/* line 42, sass/_comments.scss */
+.comment-list .comment-metadata {
+  float: right;
+}
+
+/* line 51, sass/_comments.scss */
+.comment-list .bypostauthor .comment-meta {
+  border-bottom: 2px solid #264c73;
+}
+
+/* line 57, sass/_comments.scss */
 .comment-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 63, sass/_comments.scss */
+.comment-list li {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  margin: 1em 0;
+}
+
+/* line 69, sass/_comments.scss */
+.comment-list .comment-content {
+  padding: 1em;
 }
 
 /* =Widgets

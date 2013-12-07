@@ -9,6 +9,7 @@
 }
 
 .comment-list .reply {}
+
 .comment-list .reply a {}
 
 .comment-list .alt {}
@@ -21,32 +22,54 @@
 .comment-list li ul.children .odd {}
 .comment-list li ul.children .even {}
 
-.comment-list .vcard {}
+.comment-list .vcard {
+
+}
+
 .comment-list .vcard cite.fn {}
 .comment-list .vcard span.says {}
 .comment-list .vcard img.photo {}
 .comment-list .vcard img.avatar {}
 .comment-list .vcard cite.fn a.url {}
 
-.comment-list .comment-meta {} 
+.comment-list .comment-meta {
+	background: $secondary;
+	border-bottom: 2px solid darken($secondary, 10%);
+	color: #666;
+	padding: .8em;
+} 
 .comment-list .comment-meta a {}
-.comment-list .commentmetadata {}
-.comment-list .commentmetadata a {}
+.comment-list .comment-metadata {
+		float: right;
+}
+.comment-list .comment-metadata a {}
 
 .comment-list .parent {}
 .comment-list .comment {}
 .comment-list .children {}
 .comment-list .pingback {}
-.comment-list .bypostauthor {}
+.comment-list .bypostauthor .comment-meta {
+	border-bottom: 2px solid darken($primary, 10%);
+}
 .comment-list .comment-author {}
 .comment-list .comment-author-admin {}
 
 .comment-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
-.comment-list li {
 
+.comment-list li {
+	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+	//border: 1px solid darken($secondary, 10%);
+	margin: 1em 0;
 }
+
+.comment-list .comment-content {
+	padding: 1em;
+}
+
 .comment-list li p {}
 .comment-list li ul {}
 .comment-list li ul.children li {}
