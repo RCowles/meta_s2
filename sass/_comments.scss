@@ -23,13 +23,17 @@
 .comment-list li ul.children .even {}
 
 .comment-list .vcard {
-
+	float: left;
+	width: 50%;
+	vertical-align: middle;
 }
 
 .comment-list .vcard cite.fn {}
 .comment-list .vcard span.says {}
 .comment-list .vcard img.photo {}
-.comment-list .vcard img.avatar {}
+.comment-list .vcard img.avatar {
+	vertical-align: middle;
+}
 .comment-list .vcard cite.fn a.url {}
 
 .comment-list .comment-meta {
@@ -37,10 +41,14 @@
 	border-bottom: 2px solid darken($secondary, 10%);
 	color: #666;
 	padding: .8em;
+	overflow: hidden;
 } 
 .comment-list .comment-meta a {}
 .comment-list .comment-metadata {
-		float: right;
+	float: right;
+	text-align: right;
+	vertical-align: middle;
+	width: 50%;
 }
 .comment-list .comment-metadata a {}
 

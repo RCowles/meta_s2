@@ -1209,32 +1209,48 @@ figure:hover:before {
   word-wrap: break-word;
 }
 
-/* line 35, sass/_comments.scss */
+/* line 25, sass/_comments.scss */
+.comment-list .vcard {
+  float: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+/* line 34, sass/_comments.scss */
+.comment-list .vcard img.avatar {
+  vertical-align: middle;
+}
+
+/* line 39, sass/_comments.scss */
 .comment-list .comment-meta {
   background: #eeeeee;
   border-bottom: 2px solid #d4d4d4;
   color: #666;
   padding: .8em;
+  overflow: hidden;
 }
 
-/* line 42, sass/_comments.scss */
+/* line 47, sass/_comments.scss */
 .comment-list .comment-metadata {
   float: right;
+  text-align: right;
+  vertical-align: middle;
+  width: 50%;
 }
 
-/* line 51, sass/_comments.scss */
+/* line 59, sass/_comments.scss */
 .comment-list .bypostauthor .comment-meta {
   border-bottom: 2px solid #264c73;
 }
 
-/* line 57, sass/_comments.scss */
+/* line 65, sass/_comments.scss */
 .comment-list {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 63, sass/_comments.scss */
+/* line 71, sass/_comments.scss */
 .comment-list li {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -1242,7 +1258,7 @@ figure:hover:before {
   margin: 1em 0;
 }
 
-/* line 69, sass/_comments.scss */
+/* line 77, sass/_comments.scss */
 .comment-list .comment-content {
   padding: 1em;
 }
