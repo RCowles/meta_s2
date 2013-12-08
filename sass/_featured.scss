@@ -29,7 +29,7 @@ figcaption {
 	padding: 10px 20px;
 	opacity: 0;
 	//@include border-radius(0 6px 0 0);
-	@include transition($transition-normal);
+	@include transition(all 0.3s ease-in-out);
 }
 
 figure:hover figcaption {
@@ -50,7 +50,7 @@ figure:before {
 	font-size: 14px;
 	line-height: 24px;
 	//@include border-radius(0 6px 0 0);
-	@include transition($transition-normal);
+	@include transition(all 0.3s ease-in-out);
 	opacity: 0.75;
 }
 

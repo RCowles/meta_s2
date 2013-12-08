@@ -33,7 +33,6 @@ and Blueprint http://www.blueprintcss.org/
   font-style: normal;
 }
 
-/* Transitions */
 /* =Reset
 -------------------------------------------------------------- */
 /* line 11, sass/_reset.scss */
@@ -1148,10 +1147,10 @@ figcaption {
   color: #fff;
   padding: 10px 20px;
   opacity: 0;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 /* line 35, sass/_featured.scss */
@@ -1173,10 +1172,10 @@ figure:before {
   text-align: center;
   font-size: 14px;
   line-height: 24px;
-  -webkit-transition: all 0.4s ease-in-out;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0.75;
 }
 
