@@ -43,7 +43,11 @@
 	padding: .8em;
 	overflow: hidden;
 } 
-.comment-list .comment-meta a {}
+
+.comment-list .comment-meta a {
+	text-decoration: none;	
+}
+
 .comment-list .comment-metadata {
 	float: right;
 	text-align: right;
