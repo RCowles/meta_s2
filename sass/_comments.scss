@@ -8,89 +8,97 @@
 
 }
 
-.comment-list .reply {}
-
-.comment-list .reply a {}
-
-.comment-list .alt {}
-.comment-list .odd {}
-.comment-list .even {}
-.comment-list .thread-alt {}
-.comment-list .thread-odd {}
-.comment-list .thread-even {}
-.comment-list li ul.children .alt {}
-.comment-list li ul.children .odd {}
-.comment-list li ul.children .even {}
-
-.comment-list .vcard {
-	float: left;
-	width: 50%;
-	vertical-align: middle;
-}
-
-.comment-list .vcard cite.fn {}
-.comment-list .vcard span.says {}
-.comment-list .vcard img.photo {}
-.comment-list .vcard img.avatar {
-	vertical-align: middle;
-}
-.comment-list .vcard cite.fn a.url {}
-
-.comment-list .comment-meta {
-	background: $secondary;
-	border-bottom: 2px solid darken($secondary, 10%);
-	color: #666;
-	padding: .8em;
-	overflow: hidden;
-} 
-
-.comment-list .comment-meta a {
-	text-decoration: none;	
-}
-
-.comment-list .comment-metadata {
-	float: right;
-	text-align: right;
-	vertical-align: middle;
-	width: 50%;
-}
-.comment-list .comment-metadata a {}
-
-.comment-list .parent {}
-.comment-list .comment {}
-.comment-list .children {}
-.comment-list .pingback {}
-.comment-list .bypostauthor .comment-meta {
-	border-bottom: 2px solid darken($primary, 10%);
-}
-.comment-list .comment-author {}
-.comment-list .comment-author-admin {}
-
 .comment-list {
-	list-style: none;
 	margin: 0;
 	padding: 0;
+	
+	.reply {
+		text-align: right;
+		
+		a {
+			background: $primary;
+			color: $secondary;
+			padding: .6em 1em .4em;
+			text-decoration: none;
+		}
+	}
+	
+	.alt {}
+	.odd {}
+	.even {}
+	.thread-alt {}
+	.thread-odd {}
+	.thread-even {}
+	li {
+		list-style: none;
+		ul.children {
+			.alt {}
+			.odd {}
+			.even {}
+			li {}
+			li.alt {}
+			li.byuser {}
+			li.comment {}
+			li.bypostauthor {}
+			li.comment-author-admin {}
+		}
+		p {}
+		ul {}
+	}
+	
+	.vcard {
+		float: left;
+		width: 50%;
+		vertical-align: middle;
+		cite.fn {}
+		span.says {}
+		img.photo {}
+		img.avatar {
+			vertical-align: middle;
+		}
+		.comment-list .vcard cite.fn a.url {}
+	}
+	
+	.comment-meta {
+		background: $secondary;
+		border-bottom: 2px solid darken($secondary, 10%);
+		color: #666;
+		padding: .8em;
+		overflow: hidden;
+		a {
+			text-decoration: none;	
+		}
+	}
+	
+	.comment-metadata {
+		float: right;
+		text-align: right;
+		vertical-align: middle;
+		width: 50%;
+	}
+	
+	.comment-list .comment-metadata a {}
+	.parent {}
+	.comment {}
+	.children {}
+	.pingback {}
+	.bypostauthor .comment-meta {
+		border-bottom: 2px solid darken($primary, 10%);
+	}
+	
+	.comment-author {}
+	.comment-author-admin {}
+	li {
+		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+		margin: 1em 0;
+	}
+	
+	.comment-content {
+		padding: 1em;
+	}
+
 }
 
-.comment-list li {
-	@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-	//border: 1px solid darken($secondary, 10%);
-	margin: 1em 0;
+#cancel-comment-reply {
+	a {}
 }
-
-.comment-list .comment-content {
-	padding: 1em;
-}
-
-.comment-list li p {}
-.comment-list li ul {}
-.comment-list li ul.children li {}
-.comment-list li ul.children li.alt {}
-.comment-list li ul.children li.byuser {}
-.comment-list li ul.children li.comment {}
-//.comment-list li ul.children li.depth-{id} {}
-.comment-list li ul.children li.bypostauthor {}
-.comment-list li ul.children li.comment-author-admin {}
-
-#cancel-comment-reply {}
-#cancel-comment-reply a {}
