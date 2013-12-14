@@ -82,12 +82,14 @@
 	.comment {}
 	.children {}
 	.pingback {}
+	
 	.bypostauthor .comment-meta {
 		border-bottom: 2px solid darken($primary, 10%);
 	}
 	
 	.comment-author {}
 	.comment-author-admin {}
+	
 	li {
 		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 		margin: 1em 0;
