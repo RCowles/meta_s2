@@ -1244,7 +1244,6 @@ figure:hover:before {
 /* line 58, sass/_comments.scss */
 .comment-list .vcard {
   float: left;
-  width: 50%;
   vertical-align: middle;
 }
 /* line 64, sass/_comments.scss */
@@ -1260,23 +1259,26 @@ figure:hover:before {
   background: #eeeeee;
   border-bottom: 2px solid #d4d4d4;
   color: #666;
+  display: block;
   padding: .8em;
   overflow: hidden;
 }
-/* line 82, sass/_comments.scss */
+/* line 83, sass/_comments.scss */
 .comment-list .comment-meta a {
   text-decoration: none;
 }
-/* line 87, sass/_comments.scss */
+/* line 88, sass/_comments.scss */
 .comment-list .comment-metadata {
+  clear: both;
+  font-size: 12px;
   vertical-align: middle;
-  width: 50%;
+  padding: .8em 0 0;
 }
-/* line 100, sass/_comments.scss */
+/* line 101, sass/_comments.scss */
 .comment-list .bypostauthor .comment-meta {
   border-bottom: 2px solid #264c73;
 }
-/* line 107, sass/_comments.scss */
+/* line 108, sass/_comments.scss */
 .comment-list .comment-content {
   padding: 1em;
 }

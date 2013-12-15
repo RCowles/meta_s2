@@ -57,7 +57,7 @@
 	
 	.vcard {
 		float: left;
-		width: 50%;
+		//width: 50%;
 		vertical-align: middle;
 		cite.fn {}
 		
@@ -76,6 +76,7 @@
 		background: $secondary;
 		border-bottom: 2px solid darken($secondary, 10%);
 		color: #666;
+		display: block;
 		padding: .8em;
 		overflow: hidden;
 		
@@ -85,10 +86,10 @@
 	}
 	
 	.comment-metadata {
-		//float: right;
-		//åtext-align: right;
+		clear: both;
+		font-size: 12px;
 		vertical-align: middle;
-		width: 50%;
+		padding: .8em 0 0;
 	}
 	
 	.comment-list .comment-metadata a {}
