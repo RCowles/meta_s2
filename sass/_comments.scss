@@ -31,11 +31,20 @@
 	.thread-even {}
 	li {
 		list-style: none;
+		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
+		margin: 1em 0;
+		
 		ul.children {
+			overflow: hidden;
 			.alt {}
 			.odd {}
 			.even {}
-			li {}
+			
+			li {
+				@include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
+				margin: 1em;
+			}
+			
 			li.alt {}
 			li.byuser {}
 			li.comment {}
@@ -89,11 +98,6 @@
 	
 	.comment-author {}
 	.comment-author-admin {}
-	
-	li {
-		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-		margin: 1em 0;
-	}
 	
 	.comment-content {
 		padding: 1em;
