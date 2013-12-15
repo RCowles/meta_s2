@@ -1247,11 +1247,15 @@ figure:hover:before {
   width: 50%;
   vertical-align: middle;
 }
-/* line 65, sass/_comments.scss */
+/* line 64, sass/_comments.scss */
+.comment-list .vcard span.says {
+  display: none;
+}
+/* line 69, sass/_comments.scss */
 .comment-list .vcard img.avatar {
   vertical-align: middle;
 }
-/* line 71, sass/_comments.scss */
+/* line 75, sass/_comments.scss */
 .comment-list .comment-meta {
   background: #eeeeee;
   border-bottom: 2px solid #d4d4d4;
@@ -1259,22 +1263,20 @@ figure:hover:before {
   padding: .8em;
   overflow: hidden;
 }
-/* line 77, sass/_comments.scss */
+/* line 82, sass/_comments.scss */
 .comment-list .comment-meta a {
   text-decoration: none;
 }
-/* line 82, sass/_comments.scss */
+/* line 87, sass/_comments.scss */
 .comment-list .comment-metadata {
-  float: right;
-  text-align: right;
   vertical-align: middle;
   width: 50%;
 }
-/* line 95, sass/_comments.scss */
+/* line 100, sass/_comments.scss */
 .comment-list .bypostauthor .comment-meta {
   border-bottom: 2px solid #264c73;
 }
-/* line 102, sass/_comments.scss */
+/* line 107, sass/_comments.scss */
 .comment-list .comment-content {
   padding: 1em;
 }

@@ -60,7 +60,11 @@
 		width: 50%;
 		vertical-align: middle;
 		cite.fn {}
-		span.says {}
+		
+		span.says {
+			display: none;
+		}
+		
 		img.photo {}
 		img.avatar {
 			vertical-align: middle;
@@ -74,14 +78,15 @@
 		color: #666;
 		padding: .8em;
 		overflow: hidden;
+		
 		a {
 			text-decoration: none;	
 		}
 	}
 	
 	.comment-metadata {
-		float: right;
-		text-align: right;
+		//float: right;
+		//åtext-align: right;
 		vertical-align: middle;
 		width: 50%;
 	}
