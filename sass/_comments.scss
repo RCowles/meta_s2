@@ -4,10 +4,6 @@
 	word-wrap: break-word;
 }
 
-.bypostauthor {
-
-}
-
 .comment-list {
 	margin: 0;
 	padding: 0;
@@ -98,8 +94,10 @@
 	.children {}
 	.pingback {}
 	
-	.bypostauthor .comment-meta {
-		border-bottom: 2px solid darken($primary, 10%);
+	.bypostauthor {
+		.comment-meta {
+			border-bottom: 2px solid darken($primary, 10%);
+		}
 	}
 	
 	.comment-author {}
