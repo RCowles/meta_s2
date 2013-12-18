@@ -3,22 +3,27 @@
 
 .sticky {
 }
+
 .hentry {
 	margin: 0 0 1.5em;
 }
+
 .byline,
 .updated {
 	display: none;
 }
+
 .single .byline,
 .group-blog .byline {
 	display: inline;
 }
+
 .page-content,
 .entry-content,
 .entry-summary {
 	margin: 1.5em 1.5em 0 0;
 }
+
 .page-links {
 	clear: both;
 	margin: 0 0 1.5em;
@@ -28,23 +33,11 @@
 ----------------------------------------------- */
 .entry-title {
 	font-size: 2em;
-}
+	
+	a {
+		text-decoration: none;
+	}
 
-.entry-title a {
-	text-decoration: none;
-}
-
-.entry-meta {
-	font-size: 0.8em;
-}
-
-.entry-meta a {
-	color: lighten($primary, 20%);
-	text-decoration: none;
-}
-
-.entry-meta a:hover {
-	color: lighten($primary, 10%);
 }
 
 /* =Single
@@ -55,11 +48,22 @@
 
 /* =Meta
 ----------------------------------------------- */
+
 .entry-meta {
 	background: $secondary;
 	border-bottom: 2px solid darken($secondary, 10%);
 	color: #666;
+	font-size: 0.8em;
 	padding: .8em;
+	
+	a {
+		color: lighten($primary, 20%);
+		text-decoration: none;
+	}
+	
+	a:hover {
+		color: lighten($primary, 10%);
+	}
 }
 
 footer.entry-meta {
