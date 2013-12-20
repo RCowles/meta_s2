@@ -3,11 +3,11 @@
 .featured-posts {
 	border-top: 2px solid lighten($primary, 20%);
 	clear: both;
-}
-
-.featured-posts img {
-	display: block;
-	width: 100%;
+	
+	img {
+		display: block;
+		width: 100%;
+	}
 }
 
 /* 
