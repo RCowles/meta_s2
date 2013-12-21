@@ -14,9 +14,15 @@ textarea {
 }
 
 /* Headings */
-h1, h2, h3, h4, h5, h6 {
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6 {
 	clear: both;
 }
+
 hr {
 	background-color: #ccc;
 	border: 0;
@@ -28,38 +34,54 @@ hr {
 p {
 	margin-bottom: 1.5em;
 }
-ul, ol {
+
+ul, 
+ol {
 	margin: 0 0 1.5em 3em;
 }
+
 ul {
 	list-style: disc;
 }
+
 ol {
 	list-style: decimal;
 }
+
 li > ul,
 li > ol {
 	margin-bottom: 0;
 	margin-left: 1.5em;
 }
+
 dt {
 	font-weight: bold;
 }
+
 dd {
 	margin: 0 1.5em 1.5em;
 }
-b, strong {
+
+b, 
+strong {
 	font-weight: bold;
 }
-dfn, cite, em, i {
+
+dfn, 
+cite, 
+em, 
+i {
 	font-style: italic;
 }
+
 blockquote {
 	margin: 0 1.5em;
 }
+
 address {
 	margin: 0 0 1.5em;
 }
+
 pre {
 	background: #eee;
 	font-family: $monospace;
@@ -71,18 +93,27 @@ pre {
 	overflow: auto;
 	max-width: 100%;
 }
-code, kbd, tt, var {
+
+code, 
+kbd, 
+tt, 
+var {
 	font-size: 15px;
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
-abbr, acronym {
+
+abbr, 
+acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
-mark, ins {
+
+mark, 
+ins {
 	background: #fff9c0;
 	text-decoration: none;
 }
+
 sup,
 sub {
 	font-size: 75%;
@@ -91,32 +122,41 @@ sub {
 	position: relative;
 	vertical-align: baseline;
 }
+
 sup {
 	bottom: 1ex;
 }
+
 sub {
 	top: .5ex;
 }
+
 small {
 	font-size: 75%;
 }
+
 big {
 	font-size: 125%;
 }
+
 figure {
 	margin: 0;
 }
+
 table {
 	margin: 0 0 1.5em;
 	width: 100%;
 }
+
 th {
 	font-weight: bold;
 }
+
 img {
 	height: auto; /* Make sure images are scaled correctly. */
 	max-width: 100%; /* Adhere to container width. */
 }
+
 button,
 input,
 select,
@@ -126,10 +166,12 @@ textarea {
 	vertical-align: baseline; /* Improves appearance and consistency in all browsers */
 	*vertical-align: middle; /* Improves appearance and consistency in all browsers */
 }
+
 button,
 input {
 	line-height: normal; /* Addresses FF3/4 setting line-height using !important in the UA stylesheet */
 }
+
 button,
 html input[type="button"],
 input[type="reset"],
@@ -148,6 +190,7 @@ input[type="submit"] {
 	padding: .6em 1em .4em;
 	@include text-shadow(0 1px 0 rgba(255, 255, 255, 0.8));
 }
+
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
@@ -155,6 +198,7 @@ input[type="submit"]:hover {
 	border-color: #ccc #bbb #aaa #bbb;
 	@include box-shadow(inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02));
 }
+
 button:focus,
 html input[type="button"]:focus,
 input[type="reset"]:focus,
@@ -166,25 +210,30 @@ input[type="submit"]:active {
 	border-color: #aaa #bbb #bbb #bbb;
 	@include box-shadow(inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15));
 }
+
 input[type="checkbox"],
 input[type="radio"] {
 	box-sizing: border-box; /* Addresses box sizing set to content-box in IE8/9 */
 	padding: 0; /* Addresses excess padding in IE8/9 */
 }
+
 input[type="search"] {
 	-webkit-appearance: textfield; /* Addresses appearance set to searchfield in S5, Chrome */
 	-webkit-box-sizing: content-box; /* Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
 	-moz-box-sizing:    content-box;
 	box-sizing:         content-box;
 }
+
 input[type="search"]::-webkit-search-decoration { /* Corrects inner padding displayed oddly in S5, Chrome on OSX */
 	-webkit-appearance: none;
 }
+
 button::-moz-focus-inner,
 input::-moz-focus-inner { /* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
 	border: 0;
 	padding: 0;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -195,6 +244,7 @@ textarea {
 	border: 1px solid #ccc;
 	border-radius: 3px;
 }
+
 input[type="text"]:focus,
 input[type="email"]:focus,
 input[type="url"]:focus,
@@ -203,6 +253,7 @@ input[type="search"]:focus,
 textarea:focus {
 	color: #111;
 }
+
 input[type="text"],
 input[type="email"],
 input[type="url"],
@@ -210,6 +261,7 @@ input[type="password"],
 input[type="search"] {
 	padding: 3px;
 }
+
 textarea {
 	overflow: auto; /* Removes default vertical scrollbar in IE6/7/8/9 */
 	padding-left: 3px;
@@ -224,6 +276,7 @@ a {
 a:visited {
 	color: $primary;
 }
+
 a:hover,
 a:focus,
 a:active {
@@ -236,11 +289,13 @@ a:active {
 	float: left;
 	margin-right: 1.5em;
 }
+
 .alignright {
 	display: inline;
 	float: right;
 	margin-left: 1.5em;
 }
+
 .aligncenter {
 	clear: both;
 	display: block;
