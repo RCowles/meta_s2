@@ -1,7 +1,7 @@
 Meta_s2
 ===
 
-Meta_s2 (Metascores 2) is a WordPress theme that I originally hacked together to test out [Jetpack's Featured Content](http://jetpack.me/support/featured-content/). Since then, I have added some basic layout and styling, converted the CSS to SASS, and <s>turned the theme into a mess</s> I've just been having fun with it. 
+Meta_s2 (Metascores 2) is a WordPress theme that I originally hacked together to test out [Jetpack's Featured Content](http://jetpack.me/support/featured-content/). Since then, I have added some basic layout and styling, converted the CSS to SASS, and turned the theme into a mess.
 
 I'm not sure what my endgame is, but as of now I plan on continuing to build this theme out to a.) learn and b.) possibly make something presentable.
 
