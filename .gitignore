@@ -43,3 +43,5 @@ Thumbs.db
 .sass-cache/
 .DS_Store
 *.scssc
+*.sublime-project
+*.sublime-workspace
