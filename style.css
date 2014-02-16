@@ -24,6 +24,16 @@ and Blueprint http://www.blueprintcss.org/
 /* =Variables
 ----------------------------------------------- */
 /* Colors */
+/*
+ * Alternate Color scheme
+ * https://kuler.adobe.com/purty-color-theme-3414654/
+ *
+$primary: #00A388;
+$secondary: #79BD8F;
+$dark: #333;
+$light: #ccc;
+$neutral: #404040;
+*/
 /* Fonts */
 @font-face {
   font-family: 'Genericons';
