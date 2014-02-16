@@ -615,7 +615,7 @@ footer#colophon {
 
 .site-info {
   clear: both;
-  color: #264c73;
+  color: #a4a4a4;
   font-size: 12px;
   font-size: 1.2rem;
   max-width: 1200px;
@@ -785,7 +785,7 @@ footer#colophon {
 /* Mobile Menu */
 .menu-toggle {
   background: #264c73;
-  color: #6699cc;
+  color: #f1f1f1;
   margin: 0 auto;
   padding: 6px 0;
 }
@@ -859,7 +859,7 @@ footer#colophon {
 }
 
 footer.entry-meta {
-  border-top: 2px solid #336699;
+  border-top: 2px solid #bebebe;
   margin: 0 0 4em 0;
 }
 
@@ -1090,7 +1090,7 @@ figure:hover:before {
 }
 .comment-list .reply a {
   background: #336699;
-  color: #6699cc;
+  color: #f1f1f1;
   padding: .6em 1em .4em;
   text-decoration: none;
 }
@@ -1121,8 +1121,7 @@ figure:hover:before {
   vertical-align: middle;
 }
 .comment-list .comment-meta {
-  background: #6699cc;
-  border-bottom: 2px solid #407fbf;
+  border-bottom: 2px solid #d7d7d7;
   color: #666;
   display: block;
   padding: .8em;
@@ -1136,6 +1135,9 @@ figure:hover:before {
   font-size: 12px;
   vertical-align: middle;
   padding: .8em 0 0;
+}
+.comment-list .comment {
+  background: #f1f1f1;
 }
 .comment-list .bypostauthor .comment-meta {
   border-bottom: 2px solid #264c73;

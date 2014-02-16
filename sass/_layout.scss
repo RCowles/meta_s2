@@ -75,7 +75,7 @@
 }
 
 h2.site-description {
-	color: $secondary;
+	color: lighten($primary, 20%);
 	font-size: 14px;
 	font-size: 1.4rem;
 }

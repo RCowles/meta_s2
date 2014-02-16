@@ -69,7 +69,7 @@
 	}
 
 	.comment-meta {
-		background: $secondary;
+		//background: $primary;
 		border-bottom: 2px solid darken($secondary, 10%);
 		color: #666;
 		display: block;
@@ -90,7 +90,11 @@
 
 	.comment-list .comment-metadata a {}
 	.parent {}
-	.comment {}
+
+	.comment {
+		background: $secondary;
+	}
+
 	.children {}
 	.pingback {}
 
