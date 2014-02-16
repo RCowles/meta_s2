@@ -5,7 +5,9 @@
 }
 
 .hentry {
+	background: #f1f1f1;
 	margin: 0 0 1.5em;
+	padding: 1em;
 }
 
 .byline,
@@ -29,11 +31,11 @@
 	margin: 0 0 1.5em;
 }
 
-/* =Content
+/* =Entry Title
 ----------------------------------------------- */
 .entry-title {
 	font-size: 2em;
-	
+
 	a {
 		text-decoration: none;
 	}
@@ -43,30 +45,35 @@
 /* =Single
 ----------------------------------------------- */
 .attachment-featured {
-	
+
 }
 
 /* =Meta
 ----------------------------------------------- */
 
 .entry-meta {
-	background: $secondary;
-	border-bottom: 2px solid darken($secondary, 10%);
-	color: #666;
 	font-size: 0.8em;
-	padding: .8em;
-	
-	a {
-		color: lighten($primary, 20%);
-		text-decoration: none;
-	}
-	
-	a:hover {
-		color: lighten($primary, 10%);
+	padding: .8em 0;
+
+	.entry-header & {
+		background: $secondary;
+		color: lighten($secondary, 30%);
+		margin: 1.2em -1.2em;
+		padding: .8em;
+
+			a {
+				color: lighten($secondary, 30%);
+				text-decoration: none;
+			}
+
+			a:hover {
+				color: lighten($secondary, 40%);
+			}
 	}
 }
 
 footer.entry-meta {
+	border-top: 2px solid darken($secondary, 20%);
 	margin: 0 0 4em 0;
 }
 
@@ -92,30 +99,30 @@ footer.entry-meta {
 
 /* =Post Format Styling
 ----------------------------------------------- */
-div.entry-meta:after {
+.entry-title:after {
 	color: $primary;
 	display: inline-block;
 	float: right;
 	-webkit-font-smoothing: antialiased;
-	font: normal 28px/1 'Genericons';
+	font: normal 42px/1 'Genericons';
 	vertical-align: top;
-	
+
 	.format-standard & {
 		content: '\f308';
 	}
-	
+
 	.format-gallery & {
 		content: '\f473';
 	}
-	
+
 	.format-image & {
 		content: '\f102';
 	}
-	
+
 	.format-quote & {
 		content: '\f106';
 	}
-	
+
 	.format-audio & {
 		content: '\f109';
 	}
@@ -127,11 +134,11 @@ div.entry-meta:after {
 	.format-link & {
 		content: '\f107';
 	}
-	
+
 	.format-status & {
 		content: '\f100';
 	}
-	
+
 	.format-chat & {
 		content: '\f108';
 	}

@@ -143,6 +143,30 @@ h6 {
   clear: both;
 }
 
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h3 {
+  font-size: 1.6em;
+}
+
+h4 {
+  font-size: 1.4em;
+}
+
+h5 {
+  font-size: 1.2em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
 hr {
   background-color: #ccc;
   border: 0;
@@ -195,6 +219,9 @@ i {
 }
 
 blockquote {
+  font-size: 2.4rem;
+  font-style: italic;
+  font-weight: 100;
   margin: 0 1.5em;
 }
 
@@ -530,8 +557,7 @@ a:active {
 }
 
 .site-main {
-  margin: 0 25% 0 0;
-  padding: 0 4em 1em 1em;
+  margin: 0 27% 0 0;
 }
 
 .site-content .widget-area {
@@ -575,7 +601,7 @@ a:active {
 }
 
 h2.site-description {
-  color: #eeeeee;
+  color: #6699cc;
   font-size: 14px;
   font-size: 1.4rem;
 }
@@ -590,7 +616,7 @@ footer#colophon {
 
 .site-info {
   clear: both;
-  color: #a2a2a2;
+  color: #264c73;
   font-size: 12px;
   font-size: 1.2rem;
   max-width: 1200px;
@@ -760,7 +786,7 @@ footer#colophon {
 /* Mobile Menu */
 .menu-toggle {
   background: #264c73;
-  color: #eeeeee;
+  color: #6699cc;
   margin: 0 auto;
   padding: 6px 0;
 }
@@ -776,7 +802,9 @@ footer#colophon {
 /* =Content
 ----------------------------------------------- */
 .hentry {
+  background: #f1f1f1;
   margin: 0 0 1.5em;
+  padding: 1em;
 }
 
 .byline,
@@ -800,7 +828,7 @@ footer#colophon {
   margin: 0 0 1.5em;
 }
 
-/* =Content
+/* =Entry Title
 ----------------------------------------------- */
 .entry-title {
   font-size: 2em;
@@ -814,21 +842,25 @@ footer#colophon {
 /* =Meta
 ----------------------------------------------- */
 .entry-meta {
-  background: #eeeeee;
-  border-bottom: 2px solid #d4d4d4;
-  color: #666;
   font-size: 0.8em;
+  padding: .8em 0;
+}
+.entry-header .entry-meta {
+  background: #6699cc;
+  color: #d9e6f2;
+  margin: 1.2em -1.2em;
   padding: .8em;
 }
-.entry-meta a {
-  color: #6699cc;
+.entry-header .entry-meta a {
+  color: #d9e6f2;
   text-decoration: none;
 }
-.entry-meta a:hover {
-  color: #407fbf;
+.entry-header .entry-meta a:hover {
+  color: white;
 }
 
 footer.entry-meta {
+  border-top: 2px solid #336699;
   margin: 0 0 4em 0;
 }
 
@@ -854,39 +886,39 @@ footer.entry-meta {
 
 /* =Post Format Styling
 ----------------------------------------------- */
-div.entry-meta:after {
+.entry-title:after {
   color: #336699;
   display: inline-block;
   float: right;
   -webkit-font-smoothing: antialiased;
-  font: normal 28px/1 'Genericons';
+  font: normal 42px/1 'Genericons';
   vertical-align: top;
 }
-.format-standard div.entry-meta:after {
+.format-standard .entry-title:after {
   content: '\f308';
 }
-.format-gallery div.entry-meta:after {
+.format-gallery .entry-title:after {
   content: '\f473';
 }
-.format-image div.entry-meta:after {
+.format-image .entry-title:after {
   content: '\f102';
 }
-.format-quote div.entry-meta:after {
+.format-quote .entry-title:after {
   content: '\f106';
 }
-.format-audio div.entry-meta:after {
+.format-audio .entry-title:after {
   content: '\f109';
 }
-.format-video div.entry-meta:after {
+.format-video .entry-title:after {
   content: '\f104';
 }
-.format-link div.entry-meta:after {
+.format-link .entry-title:after {
   content: '\f107';
 }
-.format-status div.entry-meta:after {
+.format-status .entry-title:after {
   content: '\f100';
 }
-.format-chat div.entry-meta:after {
+.format-chat .entry-title:after {
   content: '\f108';
 }
 
@@ -978,7 +1010,7 @@ object {
   width: 100%;
 }
 
-/* 
+/*
  * Captions based on http://css-tricks.com/slide-in-image-captions/
  */
 figure {
@@ -1059,7 +1091,7 @@ figure:hover:before {
 }
 .comment-list .reply a {
   background: #336699;
-  color: #eeeeee;
+  color: #6699cc;
   padding: .6em 1em .4em;
   text-decoration: none;
 }
@@ -1090,8 +1122,8 @@ figure:hover:before {
   vertical-align: middle;
 }
 .comment-list .comment-meta {
-  background: #eeeeee;
-  border-bottom: 2px solid #d4d4d4;
+  background: #6699cc;
+  border-bottom: 2px solid #407fbf;
   color: #666;
   display: block;
   padding: .8em;

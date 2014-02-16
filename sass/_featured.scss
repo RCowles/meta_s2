@@ -3,14 +3,14 @@
 .featured-posts {
 	border-top: 2px solid lighten($primary, 20%);
 	clear: both;
-	
+
 	img {
 		display: block;
 		width: 100%;
 	}
 }
 
-/* 
+/*
  * Captions based on http://css-tricks.com/slide-in-image-captions/
  */
 figure {

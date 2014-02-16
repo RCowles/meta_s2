@@ -7,10 +7,10 @@
 .comment-list {
 	margin: 0;
 	padding: 0;
-	
+
 	.reply {
 		text-align: right;
-		
+
 		a {
 			background: $primary;
 			color: $secondary;
@@ -18,7 +18,7 @@
 			text-decoration: none;
 		}
 	}
-	
+
 	.alt {}
 	.odd {}
 	.even {}
@@ -29,18 +29,18 @@
 		list-style: none;
 		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 		margin: 1em 0;
-		
+
 		ul.children {
 			overflow: hidden;
 			.alt {}
 			.odd {}
 			.even {}
-			
+
 			li {
 				@include box-shadow(0 0 3px rgba(0, 0, 0, 0.2));
 				margin: 1em;
 			}
-			
+
 			li.alt {}
 			li.byuser {}
 			li.comment {}
@@ -50,24 +50,24 @@
 		p {}
 		ul {}
 	}
-	
+
 	.vcard {
 		float: left;
 		//width: 50%;
 		vertical-align: middle;
 		cite.fn {}
-		
+
 		span.says {
 			display: none;
 		}
-		
+
 		img.photo {}
 		img.avatar {
 			vertical-align: middle;
 		}
 		.comment-list .vcard cite.fn a.url {}
 	}
-	
+
 	.comment-meta {
 		background: $secondary;
 		border-bottom: 2px solid darken($secondary, 10%);
@@ -75,34 +75,34 @@
 		display: block;
 		padding: .8em;
 		overflow: hidden;
-		
+
 		a {
-			text-decoration: none;	
+			text-decoration: none;
 		}
 	}
-	
+
 	.comment-metadata {
 		clear: both;
 		font-size: 12px;
 		vertical-align: middle;
 		padding: .8em 0 0;
 	}
-	
+
 	.comment-list .comment-metadata a {}
 	.parent {}
 	.comment {}
 	.children {}
 	.pingback {}
-	
+
 	.bypostauthor {
 		.comment-meta {
 			border-bottom: 2px solid darken($primary, 10%);
 		}
 	}
-	
+
 	.comment-author {}
 	.comment-author-admin {}
-	
+
 	.comment-content {
 		padding: 1em;
 	}

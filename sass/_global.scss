@@ -14,13 +14,37 @@ textarea {
 }
 
 /* Headings */
-h1, 
-h2, 
-h3, 
-h4, 
-h5, 
+h1,
+h2,
+h3,
+h4,
+h5,
 h6 {
 	clear: both;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.8em;
+}
+
+h3 {
+	font-size: 1.6em;
+}
+
+h4 {
+	font-size: 1.4em;
+}
+
+h5 {
+	font-size: 1.2em;
+}
+
+h6 {
+	font-size: 1em;
 }
 
 hr {
@@ -35,7 +59,7 @@ p {
 	margin-bottom: 1.5em;
 }
 
-ul, 
+ul,
 ol {
 	margin: 0 0 1.5em 3em;
 }
@@ -62,19 +86,22 @@ dd {
 	margin: 0 1.5em 1.5em;
 }
 
-b, 
+b,
 strong {
 	font-weight: bold;
 }
 
-dfn, 
-cite, 
-em, 
+dfn,
+cite,
+em,
 i {
 	font-style: italic;
 }
 
 blockquote {
+	font-size: 2.4rem;
+	font-style: italic;
+	font-weight: 100;
 	margin: 0 1.5em;
 }
 
@@ -94,21 +121,21 @@ pre {
 	max-width: 100%;
 }
 
-code, 
-kbd, 
-tt, 
+code,
+kbd,
+tt,
 var {
 	font-size: 15px;
 	font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 }
 
-abbr, 
+abbr,
 acronym {
 	border-bottom: 1px dotted #666;
 	cursor: help;
 }
 
-mark, 
+mark,
 ins {
 	background: #fff9c0;
 	text-decoration: none;

@@ -58,44 +58,44 @@ function meta_s2_setup() {
 	 * Image size for single header
 	 */
 	add_image_size( 'meta_s2_single_header', 9999, 300, true );
-	 
+
 	/**
 	 * Setup the WordPress core custom background feature.
 	 */
 	add_theme_support( 'custom-background', apply_filters( 'meta_s2_custom_background_args', array(
-		'default-color' => 'ffffff',
+		'default-color' => 'dddddd',
 		'default-image' => '',
 	) ) );
-	
+
 	/**
 	 * Enable Featured Content and create the new image size
 	 */
 	add_image_size( 'meta_s2_featured', 300, 300, true );
-	
+
 	add_theme_support( 'featured-content', array(
 	    'featured_content_filter' => 'meta_s2_featured_posts',
 	    'max_posts'   => 4,
 	) );
-	 
+
 	function meta_s2_get_featured_posts() {
 	    return apply_filters( 'meta_s2_featured_posts', array() );
 	}
-	 
+
 	function meta_s2_has_featured_posts( $minimum = 0 ) {
 	    if ( is_paged() )
 	        return false;
-	 
+
 	    $minimum = absint( $minimum );
 	    $featured_posts = apply_filters( 'meta_s2_get_featured_posts', array() );
-	 
+
 	    if ( ! is_array( $featured_posts ) )
 	        return false;
-	 
+
 	    if ( $minimum > count( $featured_posts ) )
 	        return false;
-	 
+
 	    return true;
-	}	
+	}
 }
 endif; // meta_s2_setup
 add_action( 'after_setup_theme', 'meta_s2_setup' );

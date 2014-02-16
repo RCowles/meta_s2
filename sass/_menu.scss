@@ -8,18 +8,18 @@
 	margin: 0 auto;
 	padding: 18px 0 12px 0;
 	text-align: center;
-	
+
 	ul {
 		list-style: none;
 		margin: 0 auto;
 		padding-left: 0;
 		text-align: center;
-		
+
 		li:hover > ul {
 			display: block;
 			opacity: 1;
 		}
-		
+
 		ul {
 			@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 			background: darken($primary, 35%);
@@ -30,70 +30,70 @@
 				top: 2.5em;
 				left: 0;
 			z-index: 99999;
-			
+
 			ul {
 				left: 100%;
 				top: 0;
 			}
-			
+
 			a {
 				border-bottom: none;
 				padding: 12px;
 				width: 200px;
 			}
-			
+
 			li:hover {
 				background: darken($primary, 15%);
 			}
-			
+
 			:hover > a {
-			
+
 			}
-			
+
 			a:hover {
-				
+
 			}
 
 		}
-		
+
 	}
-	
+
 	li {
 		display: inline-block;
 		position: relative;
 	}
-	
+
 		a {
 		color: lighten($primary, 40%);
 		display: block;
 		padding: 12px 12px;
 		text-decoration: none;
 	}
-	
+
 	li:hover,
 	li.current-menu-item {
 		background: darken($primary, 35%);
 		border-bottom: 2px solid lighten($primary, 10%);
 		color: lighten($primary, 20%);
 	}
-	
+
 	li:hover a,
 	li.current-menu-item a {
 		padding: 12px 12px 10px 12px;
 	}
-	
+
 	li.current-menu-item ul a,
 	li:hover ul li {
 		border-bottom: none;
 	}
-	
+
 	li:hover > a {
-	
+
 	}
-	
+
 	li.current_page_item a,
 	li.current-menu-item a {
-	
+
 	}
 }
 
@@ -107,17 +107,17 @@
 	.menu-toggle {
 		display: block;
 	}
-	
+
 	.site-branding, 
 	.main-navigation {
 		float: none;
 		text-align: center;
 	}
-	
+
 	.main-navigation li {
 		display: block;
 	}
-	
+
 	.main-navigation.toggled .nav-menu {
 		display: block;
 	}
@@ -147,25 +147,25 @@
 			float: left;
 			position: relative;
 			:hover > a {
-			
+
 			}
 			:hover > ul {
 				display: block;
 			}
 		}
-		
+
 		a {
 			color: lighten($primary, 20%);
 			display: block;
 			padding: 12px 8px;
 			text-decoration: none;
 		}
-		
+
 		a:hover {
 			background: darken($primary, 25%);
 			color: lighten($primary, 40%);
 		}
-		
+
 		ul ul {
 			@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 			display: none;
@@ -175,16 +175,16 @@
 				left: 0;
 			z-index: 99999;
 			li {
-				
+
 			}
 			:hover > a {
-			
+
 			}
 			a:hover {
-			
+
 			}
 		}
-		
+
 		ul ul ul {
 			left: 100%;
 			top: 0;
@@ -192,10 +192,10 @@
 				width: 200px;
 			}
 		}
-		
+
 		li.current_page_item a,
 		li.current-menu-item a {
-			
+
 		}
 	}
 }
@@ -206,7 +206,7 @@
 	color: $secondary;
 	margin: 0 auto;
 	padding: 6px 0;
-	
+
 	:before {
 		content: '\f419';
 		display: inline-block;
