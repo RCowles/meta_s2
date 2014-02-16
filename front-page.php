@@ -8,28 +8,6 @@
  */
 
 get_header(); ?>
-	
-	<?php 
-	/**
-	 * Featured Content
-	 
-	if( meta_s2_has_featured_posts() ) :
-		$featured_posts = meta_s2_get_featured_posts();
-		$post_count = count($featured_posts);
-		?>
-		<div class="featured-posts">
-			<?php foreach( $featured_posts as $post ) :
-				setup_postdata( $post ); ?>
-				<div class="featured-post">
-					<a href="<?php the_permalink(); ?>">
-						<h3><?php the_title(); ?></h3>
-						<?php the_post_thumbnail( 'meta_s2_featured'); ?>
-					</a>
-				</div>
-			<?php endforeach; ?>
-		</div>
-	<?php endif; 
-	*/ ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
