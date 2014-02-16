@@ -543,8 +543,7 @@ a:active {
 }
 
 #masthead {
-  background: #336699;
-  background: linear-gradient(#336699, #264c73);
+  background: #19334d;
   padding: 12px 0;
   padding: 1.2rem 0 0 0;
 }
@@ -846,17 +845,17 @@ footer#colophon {
   padding: .8em 0;
 }
 .entry-header .entry-meta {
-  background: #6699cc;
-  color: #d9e6f2;
+  background: #19334d;
+  color: #8cb2d9;
   margin: 1.2em -1.2em;
   padding: .8em;
 }
 .entry-header .entry-meta a {
-  color: #d9e6f2;
+  color: #8cb2d9;
   text-decoration: none;
 }
 .entry-header .entry-meta a:hover {
-  color: white;
+  color: #b3cce6;
 }
 
 footer.entry-meta {

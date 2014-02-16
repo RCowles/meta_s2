@@ -56,18 +56,18 @@
 	padding: .8em 0;
 
 	.entry-header & {
-		background: $secondary;
-		color: lighten($secondary, 30%);
+		background: darken($primary, 20%);
+		color: lighten($primary, 30%);
 		margin: 1.2em -1.2em;
 		padding: .8em;
 
 			a {
-				color: lighten($secondary, 30%);
+				color: lighten($primary, 30%);
 				text-decoration: none;
 			}
 
 			a:hover {
-				color: lighten($secondary, 40%);
+				color: lighten($primary, 40%);
 			}
 	}
 }
