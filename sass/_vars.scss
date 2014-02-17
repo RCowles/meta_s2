@@ -1,12 +1,15 @@
 /* =Variables
 ----------------------------------------------- */
 
-/* Colors */
+/*
+* Default Colors
+
 $primary: #336699;
 $secondary: #f1f1f1;
 $dark: #333;
 $light: #ccc;
 $neutral: #404040;
+*/
 
 /*
  * Alternate Color scheme
@@ -18,6 +21,16 @@ $dark: #333;
 $light: #ccc;
 $neutral: #404040;
 */
+
+/*
+ * Alternate Color scheme
+ * https://kuler.adobe.com/vintage-brown-%26-blue-color-theme-3395661/
+ */
+$primary: #A0BFB3;
+$secondary: #5A4D43;
+$dark: #333;
+$light: #F1F4DE;
+$neutral: #404040;
 
 /* Fonts */
 $sans: sans-serif;

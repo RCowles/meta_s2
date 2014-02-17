@@ -22,7 +22,7 @@
 
 		ul {
 			@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
-			background: darken($primary, 35%);
+			background: darken($primary, 40%);
 			display: none;
 			opacity: 0;
 			float: left;
@@ -72,7 +72,7 @@
 
 	li:hover,
 	li.current-menu-item {
-		background: darken($primary, 35%);
+		background: darken($primary, 40%);
 		border-bottom: 2px solid lighten($primary, 10%);
 		color: lighten($primary, 20%);
 	}
@@ -129,8 +129,9 @@
 
 /* Secondary Menu */
 .sub-navigation {
-	background: linear-gradient(color-stops(#fff, #f2f2f2));
-	border-bottom: 1px solid #ccc;
+	//background: linear-gradient(color-stops(#fff, #f2f2f2));
+	background: $secondary;
+	//border-bottom: 1px solid #ccc;
 	margin: 0 0 2em 0;
 		div {
 		clear: both;

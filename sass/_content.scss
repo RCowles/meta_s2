@@ -5,11 +5,11 @@
 }
 
 .hentry {
-	//background: #f1f1f1;
-	background: #fff;
-	@include border-radius(14px);
+	background: #f1f1f1;
+	//background: $light;
+	//@include border-radius(14px);
 	margin: 0 0 1.5em;
-	padding: 1em;
+	//padding: 1em;
 }
 
 .byline,
@@ -25,7 +25,8 @@
 .page-content,
 .entry-content,
 .entry-summary {
-	margin: 1.5em 1.5em 0 0;
+	//margin: 1.5em 1.5em 0 0;
+	padding: 1em;
 }
 
 .page-links {
@@ -33,16 +34,31 @@
 	margin: 0 0 1.5em;
 }
 
-/* =Entry Title
+/* =Entry Header
 ----------------------------------------------- */
-.entry-title {
-	font-size: 2em;
+
+.entry-header {
+	background: darken($primary, 40%);
+	color: $light;
+	text-align: center;
 
 	a {
+		color: $light;
 		text-decoration: none;
+
+		:hover {
+			color: $dark;
+		}
 	}
 
+	.entry-title {
+		font-size: 2em;
+		padding: .4em;
+	}
 }
+
+
+
 
 /* =Single
 ----------------------------------------------- */
@@ -55,28 +71,35 @@
 
 .entry-meta {
 	font-size: 0.8em;
-	padding: .8em 0;
+	padding: 1em;
 
 	.entry-header & {
-		background: darken($primary, 20%);
 		color: lighten($primary, 30%);
-		margin: 1.2em -1.2em;
-		padding: .8em;
+		padding: .4em 1em 1em 1em;
 
 			a {
-				color: lighten($primary, 30%);
+				color: lighten($primary, 20%);
 				text-decoration: none;
-			}
 
-			a:hover {
-				color: lighten($primary, 40%);
+				:hover {
+					color: darken($primary, 40%);
+				}
 			}
 	}
 }
 
 footer.entry-meta {
-	border-top: 2px solid darken($secondary, 20%);
+	background: $primary;
 	margin: 0 0 4em 0;
+
+	a {
+		color: $secondary;
+		text-decoration: none;
+
+		:hover {
+			color: $secondary;
+		}
+	}
 }
 
 .posted-on {
@@ -87,7 +110,8 @@ footer.entry-meta {
 	content: '\f307';
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
-	font: normal 16px/1 'Genericons';
+	font: normal 18px/1 'Genericons';
+	padding: 0 .2em;
 	vertical-align: top;
 }
 
@@ -95,7 +119,8 @@ footer.entry-meta {
 	content: '\f304';
 	display: inline-block;
 	-webkit-font-smoothing: antialiased;
-	font: normal 16px/1 'Genericons';
+	font: normal 18px/1 'Genericons';
+	padding: 0 .2em;
 	vertical-align: top;
 }
 

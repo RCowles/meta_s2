@@ -3,10 +3,12 @@
  * meta_s2 functions and definitions
  *
  * @package meta_s2
+ * @since 1.0
  */
 
 /**
  * Set the content width based on the theme's design and stylesheet.
+ * @since 1.0
  */
 if ( ! isset( $content_width ) )
 	$content_width = 640; /* pixels */
@@ -57,13 +59,13 @@ function meta_s2_setup() {
 	/**
 	 * Image size for single header
 	 */
-	add_image_size( 'meta_s2_single_header', 9999, 300, true );
+	add_image_size( 'meta_s2_single_header', 9999, 500, true );
 
 	/**
 	 * Setup the WordPress core custom background feature.
 	 */
 	add_theme_support( 'custom-background', apply_filters( 'meta_s2_custom_background_args', array(
-		'default-color' => 'dddddd',
+		'default-color' => '8B8374',
 		'default-image' => '',
 	) ) );
 

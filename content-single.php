@@ -6,10 +6,10 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-	
-		<?php echo get_the_post_thumbnail($post_id, 'meta_s2_single_header'); ?>
-	
+
 		<h1 class="entry-title"><?php the_title(); ?></h1>
+
+		<?php echo get_the_post_thumbnail($post_id, 'meta_s2_single_header'); ?>
 
 		<div class="entry-meta">
 			<?php meta_s2_posted_on(); ?>

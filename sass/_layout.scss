@@ -13,9 +13,9 @@
 }
 
 #masthead {
-	//background: $primary;
+	background: $primary;
 	//background: linear-gradient(color-stops($primary, darken($primary, 10%)));
-	background: darken($primary, 20%);
+	//background: darken($primary, 20%);
 	padding: 12px 0;
 	padding: 1.2rem 0 0 0;
 }
@@ -83,8 +83,9 @@ h2.site-description {
 /* =Footer
 ----------------------------------------------- */
 footer#colophon {
-	background: darken($primary, 20%);
-	border-top: 6px solid $primary;
+	//background: darken($primary, 20%);
+	background: $primary;
+	//border-top: 6px solid $primary;
 	padding: 1em 0;
 }
 
