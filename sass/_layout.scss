@@ -67,10 +67,9 @@
 	a:active {
 		color: lighten($primary, 40%);
 		text-decoration: none;
-	}
-
-	a:hover {
-		color: lighten($primary, 10%);
+		:hover {
+			color: lighten($primary, 10%);
+		}
 	}
 }
 

@@ -628,7 +628,9 @@ a:active {
   color: white;
   text-decoration: none;
 }
-.site-title a:hover {
+.site-title a :hover,
+.site-title a:visited :hover,
+.site-title a:active :hover {
   color: #bed4cb;
 }
 
