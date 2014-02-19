@@ -65,7 +65,7 @@ function meta_s2_setup() {
 	 * Setup the WordPress core custom background feature.
 	 */
 	add_theme_support( 'custom-background', apply_filters( 'meta_s2_custom_background_args', array(
-		'default-color' => '8B8374',
+		'default-color' => 'e7e2d9',
 		'default-image' => '',
 	) ) );
 

@@ -3,16 +3,34 @@
 
 /*
 * Default Colors
-
+*
 $primary: #336699;
 $secondary: #f1f1f1;
 $dark: #333;
 $light: #ccc;
 $neutral: #404040;
-*/
 
 /*
- * Alternate Color scheme
+ * Green/Brown Color scheme
+ * https://kuler.adobe.com/vintage-brown-%26-blue-color-theme-3395661/
+ */
+$primary: #A0BFB3;
+$secondary: #5A4D43;
+$dark: #333;
+$light: #e7e2d9;
+$neutral: #404040;
+
+/*
+ * Blue/Dark blue Color scheme
+ *
+$primary: #669699;
+$secondary: #242d36;
+$dark: #333;
+$light: #F1F4DE;
+$neutral: #404040;
+
+/*
+ * Neon Green Color scheme
  * https://kuler.adobe.com/purty-color-theme-3414654/
  *
 $primary: #00A388;
@@ -20,20 +38,12 @@ $secondary: #79BD8F;
 $dark: #333;
 $light: #ccc;
 $neutral: #404040;
-*/
 
-/*
- * Alternate Color scheme
- * https://kuler.adobe.com/vintage-brown-%26-blue-color-theme-3395661/
- */
-$primary: #A0BFB3;
-$secondary: #5A4D43;
-$dark: #333;
-$light: #F1F4DE;
-$neutral: #404040;
+
 
 /* Fonts */
-$sans: sans-serif;
+//$sans: sans-serif;
+$sans: "Trebuchet MS", Helvetica, sans-serif;
 $serif: serif;
 $monospace: "Courier 10 Pitch", Courier, monospace;
 @font-face {

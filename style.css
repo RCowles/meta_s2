@@ -25,15 +25,28 @@ and Blueprint http://www.blueprintcss.org/
 ----------------------------------------------- */
 /*
 * Default Colors
-
+*
 $primary: #336699;
 $secondary: #f1f1f1;
 $dark: #333;
 $light: #ccc;
 $neutral: #404040;
-*/
+
 /*
- * Alternate Color scheme
+ * Green/Brown Color scheme
+ * https://kuler.adobe.com/vintage-brown-%26-blue-color-theme-3395661/
+ */
+/*
+ * Blue/Dark blue Color scheme
+ *
+$primary: #669699;
+$secondary: #242d36;
+$dark: #333;
+$light: #F1F4DE;
+$neutral: #404040;
+
+/*
+ * Neon Green Color scheme
  * https://kuler.adobe.com/purty-color-theme-3414654/
  *
 $primary: #00A388;
@@ -41,11 +54,9 @@ $secondary: #79BD8F;
 $dark: #333;
 $light: #ccc;
 $neutral: #404040;
-*/
-/*
- * Alternate Color scheme
- * https://kuler.adobe.com/vintage-brown-%26-blue-color-theme-3395661/
- */
+
+
+
 /* Fonts */
 @font-face {
   font-family: 'Genericons';
@@ -150,7 +161,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -849,16 +860,14 @@ footer#colophon {
 /* =Entry Header
 ----------------------------------------------- */
 .entry-header {
-  background: #3b584d;
-  color: #f1f4de;
-  text-align: center;
+  color: #5a4d43;
 }
 .entry-header a {
-  color: #f1f4de;
+  color: #5a4d43;
   text-decoration: none;
 }
 .entry-header a :hover {
-  color: #333333;
+  color: #947f6f;
 }
 .entry-header .entry-title {
   font-size: 2em;
@@ -870,6 +879,7 @@ footer#colophon {
 /* =Meta
 ----------------------------------------------- */
 .entry-meta {
+  background: #a0bfb3;
   font-size: 0.8em;
   padding: 1em;
 }
@@ -877,24 +887,16 @@ footer#colophon {
   color: #fbfdfc;
   padding: .4em 1em 1em 1em;
 }
-.entry-header .entry-meta a {
-  color: #dde8e4;
-  text-decoration: none;
+.entry-meta a {
+  color: white;
 }
-.entry-header .entry-meta a :hover {
-  color: #3b584d;
+.entry-meta a :hover {
+  color: #e7e2d9;
 }
 
 footer.entry-meta {
   background: #a0bfb3;
   margin: 0 0 4em 0;
-}
-footer.entry-meta a {
-  color: #5a4d43;
-  text-decoration: none;
-}
-footer.entry-meta a :hover {
-  color: #5a4d43;
 }
 
 .posted-on {

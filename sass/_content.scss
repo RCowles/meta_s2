@@ -38,16 +38,16 @@
 ----------------------------------------------- */
 
 .entry-header {
-	background: darken($primary, 40%);
-	color: $light;
-	text-align: center;
+	//background: darken($primary, 40%);
+	color: $secondary;
+	//text-align: center;
 
 	a {
-		color: $light;
+		color: $secondary;
 		text-decoration: none;
 
 		:hover {
-			color: $dark;
+			color: lighten($secondary, 20%);
 		}
 	}
 
@@ -70,36 +70,27 @@
 ----------------------------------------------- */
 
 .entry-meta {
+	background: $primary;
 	font-size: 0.8em;
 	padding: 1em;
 
 	.entry-header & {
 		color: lighten($primary, 30%);
 		padding: .4em 1em 1em 1em;
+	}
 
-			a {
-				color: lighten($primary, 20%);
-				text-decoration: none;
+	a {
+		color: lighten($light, 20%);
 
-				:hover {
-					color: darken($primary, 40%);
-				}
-			}
+		:hover {
+			color: $light;
+		}
 	}
 }
 
 footer.entry-meta {
 	background: $primary;
 	margin: 0 0 4em 0;
-
-	a {
-		color: $secondary;
-		text-decoration: none;
-
-		:hover {
-			color: $secondary;
-		}
-	}
 }
 
 .posted-on {
