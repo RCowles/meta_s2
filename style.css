@@ -1041,7 +1041,6 @@ object {
 /* =Frontpage featured content
 ----------------------------------------------- */
 .featured-posts {
-  border-top: 2px solid #dde8e4;
   clear: both;
 }
 .featured-posts img {
