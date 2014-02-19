@@ -23,12 +23,10 @@ figure {
 
 figcaption {
 	position: absolute;
-	background: #000;
-	background: rgba(0,0,0,0.75);
+	background: $primary;
 	color: #fff;
 	padding: 10px 20px;
 	opacity: 0;
-	//@include border-radius(0 6px 0 0);
 	@include transition(all 0.3s ease-in-out);
 }
 
@@ -40,18 +38,15 @@ figure:before {
 	content: "\2192";
 	position: absolute;
 	font-weight: 800;
-	background: #fff;
-	background: rgba(255,255,255,0.75);
-	text-shadow: 0 0 5px #fff;
+	background: $primary;
+	//text-shadow: 0 0 5px #fff;
 	color: #000;
 	width: 24px;
 	height: 24px;
 	text-align: center;
 	font-size: 14px;
 	line-height: 24px;
-	//@include border-radius(0 6px 0 0);
 	@include transition(all 0.3s ease-in-out);
-	opacity: 0.75;
 }
 
 figure:hover:before {
