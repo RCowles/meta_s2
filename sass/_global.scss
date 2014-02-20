@@ -298,16 +298,18 @@ textarea {
 
 /* Links */
 a {
-	color: $primary;
-}
-a:visited {
-	color: $primary;
+	color: darken($primary, 10%);
+	text-decoration: none;
+
+	:visited {
+		color: $primary;
+	}
 }
 
 a:hover,
 a:focus,
 a:active {
-	color: lighten($primary, 18%);
+	color: $primary;
 }
 
 /* Alignment */

@@ -10,3 +10,18 @@
 aside.widget {
 
 }
+
+#secondary {
+
+	aside {
+
+		a {
+			color: darken($primary, 10%);
+
+			&:hover {
+				color: $primary;
+			}
+		}
+
+	}
+}

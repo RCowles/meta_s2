@@ -477,17 +477,17 @@ textarea {
 
 /* Links */
 a {
-  color: #a0bfb3;
+  color: #82aa9b;
+  text-decoration: none;
 }
-
-a:visited {
+a :visited {
   color: #a0bfb3;
 }
 
 a:hover,
 a:focus,
 a:active {
-  color: #d7e4df;
+  color: #a0bfb3;
 }
 
 /* Alignment */
@@ -631,9 +631,9 @@ a:active {
   color: white;
   text-decoration: none;
 }
-.site-title a :hover,
-.site-title a:visited :hover,
-.site-title a:active :hover {
+.site-title a:hover,
+.site-title a:visited:hover,
+.site-title a:active:hover {
   color: #bed4cb;
 }
 
@@ -652,7 +652,6 @@ footer#colophon {
 
 .site-info {
   clear: both;
-  color: #020202;
   font-size: 12px;
   font-size: 1.2rem;
   max-width: 1200px;
@@ -661,10 +660,12 @@ footer#colophon {
 .site-info a,
 .site-info a:visited,
 .site-info a:active {
-  color: #bed4cb;
-}
-.site-info a:hover {
   color: #dde8e4;
+}
+.site-info a:hover,
+.site-info a:visited:hover,
+.site-info a:active:hover {
+  color: #fbfdfc;
 }
 
 /* =Menu
@@ -969,6 +970,13 @@ footer.entry-meta {
 .blog .format-aside .entry-title,
 .archive .format-aside .entry-title {
   display: none;
+}
+
+#secondary aside a {
+  color: #82aa9b;
+}
+#secondary aside a:hover {
+  color: #a0bfb3;
 }
 
 /* =Media

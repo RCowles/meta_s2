@@ -129,21 +129,22 @@
 
 /* Secondary Menu */
 .sub-navigation {
-	//background: linear-gradient(color-stops(#fff, #f2f2f2));
 	background: $secondary;
-	//border-bottom: 1px solid #ccc;
 	margin: 0 0 2em 0;
+
 		div {
 		clear: both;
 		display: block;
 		margin: 0 auto;
 		max-width: 1200px;
+
 		ul {
 			list-style: none;
 			margin: 0 auto;
 			padding-left: 0;
 			overflow: hidden;
 		}
+
 		li {
 			float: left;
 			position: relative;

@@ -67,7 +67,7 @@
 	a:active {
 		color: lighten($primary, 40%);
 		text-decoration: none;
-		:hover {
+		&:hover {
 			color: lighten($primary, 10%);
 		}
 	}
@@ -90,7 +90,6 @@ footer#colophon {
 
 .site-info {
 	clear: both;
-	color: darken($secondary, 30%);
 	font-size: 12px;
 	font-size: 1.2rem;
 	max-width: 1200px;
@@ -99,9 +98,9 @@ footer#colophon {
 	a,
 	a:visited,
 	a:active {
-		color: lighten($primary, 10%);
-	}
-	a:hover {
 		color: lighten($primary, 20%);
+		&:hover {
+			color: lighten($primary, 30%);
+		}
 	}
 }
