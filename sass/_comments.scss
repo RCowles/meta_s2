@@ -10,28 +10,44 @@
 
 	.reply {
 		text-align: right;
-
+		padding: 1em;
 		a {
-			background: $primary;
-			color: $secondary;
-			padding: .6em 1em .4em;
-			text-decoration: none;
+			@include button($primary);
+			clear: both;
+
+			&:hover {
+				@include button-hover($primary);
+			}
 		}
 	}
 
 	.alt {}
 	.odd {}
 	.even {}
-	.thread-alt {}
+	.thread-alt {
+
+		.comment-meta {
+
+		}
+	}
 	.thread-odd {}
 	.thread-even {}
+
 	li {
+		background: #f1f1f1;
 		list-style: none;
 		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 		margin: 1em 0;
 
+		.depth-2,
+		.depth-4,
+		.depth-6 {
+			background: #fff;
+		}
+
 		ul.children {
 			overflow: hidden;
+
 			.alt {}
 			.odd {}
 			.even {}
@@ -47,13 +63,13 @@
 			li.bypostauthor {}
 			li.comment-author-admin {}
 		}
+
 		p {}
 		ul {}
 	}
 
 	.vcard {
 		float: left;
-		//width: 50%;
 		vertical-align: middle;
 		cite.fn {}
 
@@ -63,27 +79,32 @@
 
 		img.photo {}
 		img.avatar {
-			vertical-align: middle;
+			vertical-align: bottom;
 		}
 		.comment-list .vcard cite.fn a.url {}
 	}
 
 	.comment-meta {
-		//background: $primary;
-		border-bottom: 2px solid darken($secondary, 10%);
-		color: #666;
+		background: $primary;
+		//border-bottom: 2px solid darken($secondary, 10%);
+		color: darken($secondary, 10%);
 		display: block;
 		padding: .8em;
 		overflow: hidden;
 
 		a {
+			color: #f1f1f1;
 			text-decoration: none;
+
+			&:hover {
+				color: #fff;
+			}
 		}
 	}
 
 	.comment-metadata {
 		clear: both;
-		font-size: 12px;
+		font-size: 14px;
 		vertical-align: middle;
 		padding: .8em 0 0;
 	}
@@ -91,9 +112,7 @@
 	.comment-list .comment-metadata a {}
 	.parent {}
 
-	.comment {
-		background: $secondary;
-	}
+	.comment {}
 
 	.children {}
 	.pingback {}
@@ -115,4 +134,9 @@
 
 #cancel-comment-reply {
 	a {}
+}
+
+.comment-respond {
+	background: lighten($light, 10%);
+	padding: 2em;
 }

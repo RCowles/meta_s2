@@ -58,8 +58,6 @@ $dark: #333;
 $light: #ccc;
 $neutral: #404040;
 
-
-
 /* Fonts */
 @font-face {
   font-family: 'Genericons';
@@ -69,6 +67,7 @@ $neutral: #404040;
   font-style: normal;
 }
 
+/* Buttons */
 /* =Reset
 -------------------------------------------------------------- */
 html, body, div, span, applet, object, iframe,
@@ -366,33 +365,27 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid #ccc;
-  border-color: #ccc #ccc #bbb #ccc;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
+  background: #a0bfb3;
+  border-radius: 4px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #649582;
+  color: white;
+  line-height: 1;
+  padding: .6em 1em .4em;
   cursor: pointer;
   /* Improves usability and consistency of cursor style between image-type 'input' and others */
   -webkit-appearance: button;
   /* Corrects inability to style clickable 'input' types in iOS */
-  font-size: 12px;
-  font-size: 1.2rem;
-  line-height: 1;
-  padding: .6em 1em .4em;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
 }
 
 button:hover,
 html input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  border-color: #ccc #bbb #aaa #bbb;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
+  background: #649582;
+  border-bottom: 2px solid #3b584d;
 }
 
 button:focus,
@@ -1091,7 +1084,7 @@ figure:before {
   position: absolute;
   font-weight: 800;
   background: #a0bfb3;
-  color: #000;
+  color: #e7e2d9;
   width: 24px;
   height: 24px;
   text-align: center;
@@ -1133,19 +1126,36 @@ figure:hover:before {
 }
 .comment-list .reply {
   text-align: right;
+  padding: 1em;
 }
 .comment-list .reply a {
   background: #a0bfb3;
-  color: #5a4d43;
+  border-radius: 4px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid #649582;
+  color: white;
+  line-height: 1;
   padding: .6em 1em .4em;
-  text-decoration: none;
+  clear: both;
+}
+.comment-list .reply a:hover {
+  background: #649582;
+  border-bottom: 2px solid #3b584d;
 }
 .comment-list li {
+  background: #f1f1f1;
   list-style: none;
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   margin: 1em 0;
+}
+.comment-list li .depth-2,
+.comment-list li .depth-4,
+.comment-list li .depth-6 {
+  background: #fff;
 }
 .comment-list li ul.children {
   overflow: hidden;
@@ -1164,32 +1174,38 @@ figure:hover:before {
   display: none;
 }
 .comment-list .vcard img.avatar {
-  vertical-align: middle;
+  vertical-align: bottom;
 }
 .comment-list .comment-meta {
-  border-bottom: 2px solid #3d342d;
-  color: #666;
+  background: #a0bfb3;
+  color: #3d342d;
   display: block;
   padding: .8em;
   overflow: hidden;
 }
 .comment-list .comment-meta a {
+  color: #f1f1f1;
   text-decoration: none;
+}
+.comment-list .comment-meta a:hover {
+  color: #fff;
 }
 .comment-list .comment-metadata {
   clear: both;
-  font-size: 12px;
+  font-size: 14px;
   vertical-align: middle;
   padding: .8em 0 0;
-}
-.comment-list .comment {
-  background: #5a4d43;
 }
 .comment-list .bypostauthor .comment-meta {
   border-bottom: 2px solid #82aa9b;
 }
 .comment-list .comment-content {
   padding: 1em;
+}
+
+.comment-respond {
+  background: #fbfaf8;
+  padding: 2em;
 }
 
 /* =Widgets
