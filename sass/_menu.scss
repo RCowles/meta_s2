@@ -133,58 +133,58 @@
 	margin: 0 0 2em 0;
 
 		div {
-		clear: both;
-		display: block;
-		margin: 0 auto;
-		max-width: 1200px;
-
-		ul {
-			list-style: none;
-			margin: 0 auto;
-			padding-left: 0;
-			overflow: hidden;
-		}
-
-		li {
-			float: left;
-			position: relative;
-			:hover > a {
-
-			}
-			:hover > ul {
-				display: block;
-			}
-		}
-
-		a {
-			color: lighten($primary, 20%);
+			clear: both;
 			display: block;
-			padding: 12px 8px;
-			text-decoration: none;
-		}
+			margin: 0 auto;
+			max-width: 1200px;
 
-		a:hover {
-			background: darken($primary, 25%);
-			color: lighten($primary, 40%);
-		}
+			ul {
+				list-style: none;
+				margin: 0 auto;
+				padding-left: 0;
+				overflow: hidden;
+			}
+
+			li {
+				float: left;
+				position: relative;
+
+				&:hover > a {}
+
+				&:hover > ul {
+					display: block;
+				}
+			}
+
+			a {
+				color: lighten($primary, 20%);
+				display: block;
+				padding: 12px 8px;
+				text-decoration: none;
+			}
+
+			a:hover {
+				background: darken($primary, 25%);
+				color: lighten($primary, 40%);
+			}
+
+			.current-menu-item a {
+				background: lighten($secondary, 10%);
+			}
 
 		ul ul {
 			@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));
 			display: none;
 			float: left;
 			position: absolute;
-				top: 1.5em;
+				top: 2.5em;
 				left: 0;
 			z-index: 99999;
-			li {
+			li {}
 
-			}
-			:hover > a {
+			&:hover > a {}
 
-			}
-			a:hover {
-
-			}
+			a:hover {}
 		}
 
 		ul ul ul {

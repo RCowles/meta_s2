@@ -162,7 +162,7 @@ button,
 input,
 select,
 textarea {
-  color: #404040;
+  color: #666666;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: 16px;
   font-size: 1.6rem;
@@ -180,11 +180,13 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 h2 {
+  color: #82aa9b;
   font-size: 1.8em;
+  line-height: 1.8;
 }
 
 h3 {
@@ -786,7 +788,7 @@ footer#colophon {
   float: left;
   position: relative;
 }
-.sub-navigation div li :hover > ul {
+.sub-navigation div li:hover > ul {
   display: block;
 }
 .sub-navigation div a {
@@ -799,6 +801,9 @@ footer#colophon {
   background: #5a8675;
   color: white;
 }
+.sub-navigation div .current-menu-item a {
+  background: #776659;
+}
 .sub-navigation div ul ul {
   -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -806,7 +811,7 @@ footer#colophon {
   display: none;
   float: left;
   position: absolute;
-  top: 1.5em;
+  top: 2.5em;
   left: 0;
   z-index: 99999;
 }
@@ -867,16 +872,15 @@ footer#colophon {
 .entry-header {
   color: #5a4d43;
 }
-.entry-header a {
+.entry-header .entry-title {
+  padding: .4em;
+}
+.entry-header .entry-title a {
   color: #5a4d43;
   text-decoration: none;
 }
-.entry-header a :hover {
+.entry-header .entry-title a:hover {
   color: #947f6f;
-}
-.entry-header .entry-title {
-  font-size: 2em;
-  padding: .4em;
 }
 
 /* =Single
@@ -891,25 +895,25 @@ footer#colophon {
   padding: 1em;
 }
 .entry-header .entry-meta {
-  color: #fbfdfc;
+  color: #e9f0ee;
   padding: 1em;
 }
 .entry-meta a {
-  color: white;
+  color: #e9f0ee;
 }
-.entry-meta a :hover {
-  color: #e7e2d9;
+.entry-meta a:hover {
+  color: #fbfdfc;
 }
 
 footer.entry-meta {
   background: #a0bfb3;
+  color: #507667;
   margin: 0 0 4em 0;
 }
 
 .posted-on {
   margin-right: 1em;
 }
-
 .posted-on:before {
   content: '\f307';
   display: inline-block;
@@ -931,11 +935,11 @@ footer.entry-meta {
 /* =Post Format Styling
 ----------------------------------------------- */
 .entry-title:after {
-  color: #a0bfb3;
+  color: #5a4d43;
   display: inline-block;
   float: right;
   -webkit-font-smoothing: antialiased;
-  font: normal 42px/1 'Genericons';
+  font: normal 48px/1 'Genericons';
   vertical-align: top;
 }
 .format-standard .entry-title:after {

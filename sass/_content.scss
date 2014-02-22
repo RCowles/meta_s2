@@ -36,18 +36,17 @@
 .entry-header {
 	color: $secondary;
 
-	a {
-		color: $secondary;
-		text-decoration: none;
-
-		:hover {
-			color: lighten($secondary, 20%);
-		}
-	}
-
 	.entry-title {
-		font-size: 2em;
 		padding: .4em;
+
+		a {
+			color: $secondary;
+			text-decoration: none;
+
+			&:hover {
+				color: lighten($secondary, 20%);
+			}
+		}
 	}
 }
 
@@ -71,35 +70,36 @@
 	padding: 1em;
 
 	.entry-header & {
-		color: lighten($primary, 30%);
+		color: lighten($primary, 24%);
 		padding: 1em;
 	}
 
 	a {
-		color: lighten($light, 20%);
+		color: lighten($primary, 24%);
 
-		:hover {
-			color: $light;
+		&:hover {
+			color: lighten($primary, 30%);
 		}
 	}
 }
 
 footer.entry-meta {
 	background: $primary;
+	color: darken($primary, 30%);
 	margin: 0 0 4em 0;
 }
 
 .posted-on {
 	margin-right: 1em;
-}
 
-.posted-on:before {
-	content: '\f307';
-	display: inline-block;
-	-webkit-font-smoothing: antialiased;
-	font: normal 18px/1 'Genericons';
-	padding: 0 .2em;
-	vertical-align: top;
+	&:before {
+		content: '\f307';
+		display: inline-block;
+		-webkit-font-smoothing: antialiased;
+		font: normal 18px/1 'Genericons';
+		padding: 0 .2em;
+		vertical-align: top;
+	}
 }
 
 .byline:before {
@@ -114,11 +114,11 @@ footer.entry-meta {
 /* =Post Format Styling
 ----------------------------------------------- */
 .entry-title:after {
-	color: $primary;
+	color: $secondary;
 	display: inline-block;
 	float: right;
 	-webkit-font-smoothing: antialiased;
-	font: normal 42px/1 'Genericons';
+	font: normal 48px/1 'Genericons';
 	vertical-align: top;
 
 	.format-standard & {

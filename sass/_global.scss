@@ -24,11 +24,13 @@ h6 {
 }
 
 h1 {
-	font-size: 2em;
+	font-size: 2.2em;
 }
 
 h2 {
+	color: darken($primary, 10%);
 	font-size: 1.8em;
+	line-height: 1.8;
 }
 
 h3 {
