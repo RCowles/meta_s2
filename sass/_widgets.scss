@@ -2,6 +2,7 @@
 ----------------------------------------------- */
 
 .widget {
+	color: lighten($secondary, 10%);
 	margin: 0 0 1.5em;
 }
 
@@ -22,7 +23,7 @@
 
 /* Widget Defaults */
 .widget-title {
-	border-bottom: 2px solid lighten($secondary, 20%);
+	border-bottom: 2px solid darken($primary, 0%);
 	color: darken($primary, 10%);
 	font-size: 18px;
 	font-size: 1.8rem;
@@ -68,30 +69,32 @@ aside.widget li a {
 	margin: 0 auto;
 	padding: 0;
 	max-width: 1200px;
-}
 
-#footer-widgets aside {
-	float: left;
-	padding: 1% 1% 1% 0;
-	width: 24%;
-}
+	 aside {
+	 	color: darken($primary, 30%);
+		float: left;
+		padding: 1% 1% 1% 0;
+		width: 24%;
 
-#footer-widgets aside:last-child {
-	padding: 1% 0;
-	width: 25%;
-}
+		&:last-child {
+			padding: 1% 0;
+			width: 25%;
+		}
+	}
 
-#footer-widgets .widget-title {
-	border-bottom: 2px solid darken($primary, 10%);
-	color: lighten($primary, 30%);
-}
+	.widget-title {
+		border-bottom: 2px solid darken($primary, 10%);
+		color: lighten($primary, 30%);
+	}
 
-#footer-widgets a,
-#footer-widgets a:visited,
-#footer-widgets a:active {
-	color: lighten($primary, 20%);
-}
+	a,
+	a:visited,
+	a:active {
+		color: lighten($primary, 20%);
+	}
 
-#footer-widgets a:hover {
-	color: lighten($primary, 30%);
+	a:hover {
+		color: lighten($primary, 30%);
+	}
+
 }

@@ -15,7 +15,6 @@
 #masthead {
 	background: $primary;
 	//background: linear-gradient(color-stops($primary, darken($primary, 10%)));
-	//background: darken($primary, 50%);
 	padding: 12px 0;
 	padding: 1.2rem 0 0 0;
 }
@@ -29,7 +28,6 @@
 
 .site-main {
 	margin: 0 27% 0 0;
-	//padding: 1em;
 }
 
 .site-content .widget-area {
@@ -82,10 +80,9 @@ h2.site-description {
 /* =Footer
 ----------------------------------------------- */
 footer#colophon {
-	//background: darken($primary, 20%);
 	background: $primary;
-	//border-top: 6px solid $primary;
-	padding: 1em 0;
+	color: darken($primary, 30%);
+	padding: 1em 0 2em 0;
 }
 
 .site-info {

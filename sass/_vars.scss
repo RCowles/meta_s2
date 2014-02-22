@@ -2,16 +2,7 @@
 ----------------------------------------------- */
 
 /*
-* Default Colors
-*
-$primary: #336699;
-$secondary: #f1f1f1;
-$dark: #333;
-$light: #ccc;
-$neutral: #404040;
-
-/*
- * Green/Brown Color scheme
+ * Green/Brown color scheme
  * https://kuler.adobe.com/vintage-brown-%26-blue-color-theme-3395661/
  */
 $primary: #A0BFB3;
@@ -21,7 +12,16 @@ $light: #e7e2d9;
 $neutral: #404040;
 
 /*
- * Blue/Dark blue Color scheme
+* Blue/Gray color scheme
+*
+$primary: #336699;
+$secondary: #f1f1f1;
+$dark: #333;
+$light: #ccc;
+$neutral: #404040;
+
+/*
+ * Blue/Dark Blue color scheme
  *
 $primary: #669699;
 $secondary: #242d36;
@@ -30,7 +30,7 @@ $light: #F1F4DE;
 $neutral: #404040;
 
 /*
- * Neon Green Color scheme
+ * Neon Green color scheme
  * https://kuler.adobe.com/purty-color-theme-3414654/
  *
 $primary: #00A388;
@@ -58,7 +58,7 @@ $monospace: "Courier 10 Pitch", Courier, monospace;
 /* Buttons */
 @mixin button($color) {
 	background: $color;
-	border-radius: 4px;
+	@include border-radius(4px);
 	border-top: none;
 	border-right: none;
 	border-left: none;
