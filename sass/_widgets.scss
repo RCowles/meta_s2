@@ -22,8 +22,8 @@
 
 /* Widget Defaults */
 .widget-title {
-	border-bottom: 2px solid lighten($primary, 20%);
-	color: $primary;
+	border-bottom: 2px solid lighten($secondary, 20%);
+	color: darken($primary, 10%);
 	font-size: 18px;
 	font-size: 1.8rem;
 	margin: .5em 0;
