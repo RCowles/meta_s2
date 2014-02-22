@@ -10,7 +10,8 @@
 	padding: 0;
 }
 
-.wp-caption {
+.wp-caption,
+.gallery-caption {
 	border: 1px solid #ccc;
 	background: $primary;
 	color: lighten($light, 10%);

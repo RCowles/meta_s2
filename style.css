@@ -915,6 +915,10 @@ footer#colophon {
   margin: 0 0 1.5em;
 }
 
+.sticky {
+  border: 1px dashed #5a4d43;
+}
+
 /* =Entry Header
 ----------------------------------------------- */
 .entry-header {
@@ -1043,7 +1047,8 @@ footer.entry-meta {
   padding: 0;
 }
 
-.wp-caption {
+.wp-caption,
+.gallery-caption {
   border: 1px solid #ccc;
   background: #a0bfb3;
   color: #fbfaf8;
@@ -1052,11 +1057,15 @@ footer.entry-meta {
 }
 .wp-caption a,
 .wp-caption a:active,
-.wp-caption a:visited {
+.wp-caption a:visited,
+.gallery-caption a,
+.gallery-caption a:active,
+.gallery-caption a:visited {
   color: #dde8e4;
   text-decoration: underline;
 }
-.wp-caption a:hover {
+.wp-caption a:hover,
+.gallery-caption a:hover {
   color: #fbfdfc;
 }
 
