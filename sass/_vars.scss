@@ -9,8 +9,8 @@ $primary: #A0BFB3;
 $secondary: #5A4D43;
 $dark: #333;
 $light: #e7e2d9;
-//$neutral: #404040;
-$neutral: #666;
+$neutral: #404040;
+//$neutral: #666;
 
 /*
 * Blue/Gray color scheme
@@ -44,7 +44,7 @@ $neutral: #404040;
 //$sans: sans-serif;
 $sans: "Trebuchet MS", Helvetica, sans-serif;
 $serif: serif;
-$monospace: "Courier 10 Pitch", Courier, monospace;
+$monospace: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 @font-face {
     font-family: 'Genericons';
     src: url('font/genericons-regular-webfont.eot');
@@ -60,6 +60,7 @@ $monospace: "Courier 10 Pitch", Courier, monospace;
 @mixin button($color) {
 	background: $color;
 	@include border-radius(4px);
+	@include transition(all, 200ms);
 	border-top: none;
 	border-right: none;
 	border-left: none;

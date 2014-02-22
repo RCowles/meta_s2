@@ -33,7 +33,7 @@
 	.thread-odd {}
 	.thread-even {}
 
-	li {
+	li.comment {
 		background: #f1f1f1;
 		list-style: none;
 		@include box-shadow(0 3px 3px rgba(0, 0, 0, 0.2));

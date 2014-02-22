@@ -97,4 +97,17 @@ aside.widget li a {
 		color: lighten($primary, 30%);
 	}
 
+	table {
+		background: none;
+	}
+
+	th {
+		color: darken($primary, 30%);
+	}
+
+	td,
+	th {
+		border: none;
+	}
+
 }
