@@ -170,3 +170,11 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+/**
+ * Add Editor styling
+ */
+function meta_s2_add_editor_styles() {
+    add_editor_style( 'custom-editor-style.css' );
+}
+add_action( 'init', 'meta_s2_add_editor_styles' );
