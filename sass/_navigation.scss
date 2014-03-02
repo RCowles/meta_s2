@@ -6,13 +6,23 @@
 	overflow: hidden;
 }
 
-[class*="navigation"] .nav-previous {
+[class*="navigation"] .nav-previous a {
+	@include button($primary);
 	float: left;
-	width: 50%;
+	//width: 50%;
+
+	&:hover {
+		@include button-hover($primary);
+	}
 }
 
-[class*="navigation"] .nav-next {
+[class*="navigation"] .nav-next a {
+	@include button($primary);
 	float: right;
 	text-align: right;
-	width: 50%;
+	//width: 50%;
+
+	&:hover {
+		@include button-hover($primary);
+	}
 }

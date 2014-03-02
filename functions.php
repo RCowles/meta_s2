@@ -59,7 +59,7 @@ function meta_s2_setup() {
 	/**
 	 * Image size for single header
 	 */
-	add_image_size( 'meta_s2_single_header', 9999, 500, true );
+	//add_image_size( 'meta_s2_single_header', 9999, 500, true );
 
 	/**
 	 * Setup the WordPress core custom background feature.
@@ -175,6 +175,6 @@ require get_template_directory() . '/inc/jetpack.php';
  * Add Editor styling
  */
 function meta_s2_add_editor_styles() {
-    add_editor_style( 'custom-editor-style.css' );
+    add_editor_style( 'editor-style.css' );
 }
 add_action( 'init', 'meta_s2_add_editor_styles' );

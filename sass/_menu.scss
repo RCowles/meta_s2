@@ -97,36 +97,6 @@
 	}
 }
 
-/* Small menu */
-.menu-toggle {
-	display: none;
-	cursor: pointer;
-}
-
-@media screen and (max-width: 600px) {
-	.menu-toggle {
-		display: block;
-	}
-
-	.site-branding, 
-	.main-navigation {
-		float: none;
-		text-align: center;
-	}
-
-	.main-navigation li {
-		display: block;
-	}
-
-	.main-navigation.toggled .nav-menu {
-		display: block;
-	}
-
-	.main-navigation .nav-menu {
-		display: none;
-	}
-}
-
 /* Secondary Menu */
 .sub-navigation {
 	background: $secondary;
@@ -203,9 +173,14 @@
 }
 
 /* Mobile Menu */
+
+.menu-toggle {
+	display: none;
+	cursor: pointer;
+}
 .menu-toggle {
 	background: darken($primary, 10%);
-	color: $secondary;
+	color: $light;
 	margin: 0 auto;
 	padding: 6px 0;
 

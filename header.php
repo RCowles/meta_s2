@@ -52,7 +52,6 @@
 		<div class="featured-posts">
 			<?php foreach( $featured_posts as $post ) :
 				setup_postdata( $post ); ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 				<figure class="cap-left">
 					<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 						<?php the_post_thumbnail( 'meta_s2_featured'); ?>
