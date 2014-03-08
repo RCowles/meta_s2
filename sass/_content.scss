@@ -41,6 +41,8 @@
 	color: $secondary;
 
 	.entry-title {
+		-ms-word-wrap: break-word;
+		word-wrap: break-word;
 		padding: .4em;
 
 		a {

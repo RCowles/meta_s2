@@ -56,10 +56,10 @@ function meta_s2_setup() {
 	 */
 	add_theme_support( 'post-formats', array( 'aside', 'image', 'video', 'quote', 'link', 'status' ) );
 
-	/**
-	 * Image size for single header
-	 */
-	//add_image_size( 'meta_s2_single_header', 9999, 500, true );
+  /**
+   * Add Editor style
+   */
+  add_editor_style( 'editor-style.css' );
 
 	/**
 	 * Setup the WordPress core custom background feature.
@@ -170,11 +170,3 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-/**
- * Add Editor styling
- */
-function meta_s2_add_editor_styles() {
-    add_editor_style( 'editor-style.css' );
-}
-add_action( 'init', 'meta_s2_add_editor_styles' );
