@@ -10,8 +10,9 @@ This theme is based on Underscores, (C) 2012-2013 Automattic, Inc.
 Genericons, Copyright 2013 Automattic, Inc.
  - Source: http://www.genericons.com
  - License: GNU GPL, Version 2 (or later)
- - License URI: /fonts/license.txt
+ - License URI: /font/license.txt
 
 == Changelog ==
+ - v1.0.3 - Remove unnecessary files/folders
  - v1.0.2 - Issues fixed for theme review (see https://themes.trac.wordpress.org/ticket/17066)
  - v1.0.1 - Initial release
